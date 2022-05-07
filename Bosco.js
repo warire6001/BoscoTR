@@ -393,7 +393,7 @@ const ftex = {
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text": `hello bro ${pushname}`,
+                 "text": `Selam dostum! ${pushname}`,
                  "title": `${pushname}`,
                  'jpegThumbnail': dfrply
                         }
@@ -844,11 +844,11 @@ const ftrol = {
         '🍌 : 🍇 : 🔔',
         '🍐 : 🔔 : 🔔',
         '🍊 : 🍋 : 🍒',
-        '🍋 : 🍋 : 🍋 Win👑',
+        '🍋 : 🍋 : 🍋 KAZANDIN!👑',
         '🔔 : 🔔 : 🍇',
         '🔔 : 🍇 : 🍇', 
         '🔔 : 🍐 : 🔔',
-        '🍌 : 🍌 : 🍌 Win👑'
+        '🍌 : 🍌 : 🍌 KAZANDIN!👑'
         ]
        
         colors = ['red', 'white', 'black', 'blue', 'yellow', 'green']
@@ -878,54 +878,54 @@ const ftrol = {
 			}
         if (isGroup && isAntiLink && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match("https:\\chat.whatsapp.com")) {
-                reply(`?? *GROUP LINK DETECTOR* 🚧\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`?? *GRUP LİNKİ DEDEKTÖRÜ* 🚧\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match(/(https:\\chat.whatsapp.com)/gi)) {
-                reply(`🚧 *GROUP LINK DETECTOR* 🚧\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`🚧 *GRUP LİNKİ DEDEKTÖRÜ* 🚧\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
        if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match(/(https:\\chat.whatsapp.com)/gi)) {
-                reply(`*🚧GROUP LINK DETECTOR🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`*🚧GRUP LİNKİ DEDEKTÖRÜ🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match(/(https:\\chat.whatsapp.com)/gi)) {
-                reply(`*🚧GROUP LINK DETECTOR🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`*🚧GRUP LİNKİ DEDEKTÖRÜ🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
          if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match(/(https:\\chat.whatsapp.com)/gi)) {
-                reply(`*🚧GROUP LINK DETECTOR🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`*🚧GRUP LİNKİ DEDEKTÖRÜ🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (budy.match(/(https:\\chat.whatsapp.com)/gi)) {
-                reply(`*🚧GROUP LINK DETECTOR🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
+                reply(`*🚧GRUP LİNKİ DEDEKTÖRÜ🚧*\n\n_To Any Links Send This Group You Will Kicked_`)
                 bosco.groupRemove(from, [sender])
             }
         }
        
 			if (budy.toLowerCase() === `${prefix}promote`){
 		    if (!isGroup) return reply(mess.only.group)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Bir kişiyi yanıtlayarak yap!')
 			picknya = mek.message.extendedTextMessage.contextInfo.participant
 		    bosco.groupMakeAdmin(from, [picknya])
-		    return reply(`*Pʀᴏᴍᴏᴛᴇᴅ*`)
+		    return reply(`*YETKİ VERİLDİ! ARTIK YÖNETİCİ!*`)
 			}
 			if (budy.toLowerCase() === `${prefix}demote`){
 		    if (!isGroup) return reply(mess.only.group)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Bir kişiyi yanıtlayarak yap!')
 			dicknya = mek.message.extendedTextMessage.contextInfo.participant
 		    bosco.groupDemoteAdmin(from, [dicknya])
-		    return reply(`*Dᴇᴍᴏᴛᴇᴅ*`)
+		    return reply(`*YETKİ DÜŞÜRÜLDÜ! ARTIK YÖNETİCİ DEĞİL*`)
 			}
          
         // Button Cmd 
@@ -979,17 +979,17 @@ const ftrol = {
         timestampe = speed();
         latensie = speed() - timestampe
  hehe = `
- ▢ Hɪ Bʀᴏ @${sender.split("@")[0]}
- ▢ Pʀɪᴠᴀᴛᴇ : ${privat.length}
- ▢ Gʀᴏᴜᴘs : ${groups.length}
- ▢ Tᴏᴛᴀʟ : ${totalChat.length}
- ▢ Sᴘᴇᴇᴅ : ${latensie.toFixed(4)}
- ▢ Bᴀᴛᴛᴇʀʏ : ${baterai}%\n
+ ▢ Selam dostum! @${sender.split("@")[0]}
+ ▢ Özel : ${privat.length}
+ ▢ Grupları : ${groups.length}
+ ▢ Toplam : ${totalChat.length}
+ ▢ Hız : ${latensie.toFixed(4)}
+ ▢ Şarj/Pil : ${baterai}%\n
  ${jmn} -  ${jmo}\n${week} - ${calender}
  `
- menubutton = [{buttonId:`${prefix}help`,buttonText:{displayText:'MENU'},type:1},
+ menubutton = [{buttonId:`${prefix}help`,buttonText:{displayText:'MENÜ'},type:1},
  {buttonId:`${prefix}sc`,buttonText:{displayText:'SCRIPT'},type:1},
- {buttonId:`${prefix}boscogroup`,buttonText:{displayText:'BOT GROUP'},type:1}
+ {buttonId:`${prefix}boscogroup`,buttonText:{displayText:'BOT GRUBU'},type:1}
 ]
  menumessage = { contentText: ` `, footerText: `${hehe}`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
  bosco.sendMessage(from, menumessage, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [sender]},})
@@ -999,11 +999,11 @@ const ftrol = {
  break
     
     case 'boscogroup':
-     function _0x4663(){var _0x2fc8bc=['61360RbdMuw','1938303OzLjeN','659960nzjTUM','404766EJGGBI','7WhscAJ','997400vvejgD','1297674CcBmhI','610998dTuyrA','5IPhDWS'];_0x4663=function(){return _0x2fc8bc;};return _0x4663();}function _0x1231(_0x40cb45,_0x55ff98){var _0x4663dc=_0x4663();return _0x1231=function(_0x1231ee,_0x440ba1){_0x1231ee=_0x1231ee-0x166;var _0x2eb6a7=_0x4663dc[_0x1231ee];return _0x2eb6a7;},_0x1231(_0x40cb45,_0x55ff98);}(function(_0x4d6264,_0xc43f28){var _0x4f3c9d=_0x1231,_0xf81e96=_0x4d6264();while(!![]){try{var _0x15833d=parseInt(_0x4f3c9d(0x16b))/0x1+-parseInt(_0x4f3c9d(0x16e))/0x2+-parseInt(_0x4f3c9d(0x169))/0x3+-parseInt(_0x4f3c9d(0x16d))/0x4*(-parseInt(_0x4f3c9d(0x16a))/0x5)+parseInt(_0x4f3c9d(0x168))/0x6+-parseInt(_0x4f3c9d(0x166))/0x7*(parseInt(_0x4f3c9d(0x167))/0x8)+parseInt(_0x4f3c9d(0x16c))/0x9;if(_0x15833d===_0xc43f28)break;else _0xf81e96['push'](_0xf81e96['shift']());}catch(_0x375167){_0xf81e96['push'](_0xf81e96['shift']());}}}(_0x4663,0x1f128),groupBosco='https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m',catlo(groupBosco));
+     function _0x4663(){var _0x2fc8bc=['61360RbdMuw','1938303OzLjeN','659960nzjTUM','404766EJGGBI','7WhscAJ','997400vvejgD','1297674CcBmhI','610998dTuyrA','5IPhDWS'];_0x4663=function(){return _0x2fc8bc;};return _0x4663();}function _0x1231(_0x40cb45,_0x55ff98){var _0x4663dc=_0x4663();return _0x1231=function(_0x1231ee,_0x440ba1){_0x1231ee=_0x1231ee-0x166;var _0x2eb6a7=_0x4663dc[_0x1231ee];return _0x2eb6a7;},_0x1231(_0x40cb45,_0x55ff98);}(function(_0x4d6264,_0xc43f28){var _0x4f3c9d=_0x1231,_0xf81e96=_0x4d6264();while(!![]){try{var _0x15833d=parseInt(_0x4f3c9d(0x16b))/0x1+-parseInt(_0x4f3c9d(0x16e))/0x2+-parseInt(_0x4f3c9d(0x169))/0x3+-parseInt(_0x4f3c9d(0x16d))/0x4*(-parseInt(_0x4f3c9d(0x16a))/0x5)+parseInt(_0x4f3c9d(0x168))/0x6+-parseInt(_0x4f3c9d(0x166))/0x7*(parseInt(_0x4f3c9d(0x167))/0x8)+parseInt(_0x4f3c9d(0x16c))/0x9;if(_0x15833d===_0xc43f28)break;else _0xf81e96['push'](_0xf81e96['shift']());}catch(_0x375167){_0xf81e96['push'](_0xf81e96['shift']());}}}(_0x4663,0x1f128),groupBosco='https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ',catlo(groupBosco));
     break
     case 'ownermenu':
     owner1 =`
-▢ 𝑶 𝑾 𝑵 𝑬 𝑹 - 𝑴 𝑬 𝑵 𝑼 ▢ 
+▢ 𝓚𝓤𝓡𝓤𝓒𝓤 - 𝓜𝓔𝓝𝓤 ▢ 
 
 
 ▢ ${prefix}setbgmpic
@@ -1054,7 +1054,7 @@ catlo(owner1)
    break
    case 'groupmenu':
       group1 = `
-▢ 𝑮 𝑹 𝑶 𝑼 𝑷 - 𝑴 𝑬 𝑵 𝑼 ▢ 
+▢ 𝓖𝓡𝓤𝓟 - 𝓜𝓔𝓝𝓤 ▢ 
  
 
 ▢ ${prefix}add
@@ -1140,7 +1140,7 @@ catlo(edit1)
       break
       case 'storagemenu':
         storage1 = `
-▢ 𝑺 𝑻 𝑶 𝑹 𝑨 𝑮 𝑬 - 𝑴 𝑬 𝑵 𝑼 ▢ 
+▢ 𝓓𝓔𝓟𝓞 - 𝓜𝓔𝓝𝓤𝓢𝓤 ▢ 
 
 
 ▢ ${prefix}addvn
@@ -1191,7 +1191,7 @@ catlo(storage1)
      break
      case 'downloadmenu':
      download1 = `
-▢ 𝑫 𝑶 𝑾 𝑵 𝑳 𝑶 𝑨 𝑫 - 𝑴 𝑬 𝑵 𝑼 ▢ 
+▢ İ𝓝𝓓İ𝓡𝓜𝓔 - 𝓜𝓔𝓝𝓤𝓢𝓤 ▢ 
 
 ▢ ${prefix}play
 
@@ -1243,17 +1243,17 @@ catlo(download1)
     
    case 'rules':
            rules1 = `
------[ 𝑹 𝑼 𝑳 𝑬 𝑺 ]-----
+-----[ KURALLAR ]-----
 
-1. 𝙳𝙾𝙽𝚃 𝙲𝙰𝙻𝙻 𝙱𝙾𝚃
+1. Laçin Eke YouTube Kanalına Abone OL https://youtube.com/c/LacinEke
 
-2. 𝙳𝙾𝙽𝚃 𝚂𝙿𝙰𝙼 𝙱𝙾𝚃
+2. TELEGRAM'a KATIL https://t.me/rlchat
 
-3. 𝙳𝙾𝙽𝚃 𝙿𝙼 𝙱𝙾𝚃
+3. WHATSAPP GRUBUNA KATIL https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ
 
-4. 𝙳𝙾𝙽𝚃 𝙼𝙸𝚂𝚄𝚂𝙴 𝚃𝙷𝙴 𝙱𝙾𝚃
+4. GİTHUB https://github.com/EkeLachin/BoscoTR
 
-5. 𝙰𝙽𝚈 𝙿𝚁𝙾𝙱𝙻𝙰𝙼 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁
+5. SORUN OLURSA WHATSAPP/TELEGRAM GRUBUMUZA GELİN!
 wa.me/${owner}`
        osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": denis, "surface": 'CATALOG'}}, {quoted: mek})
             bosco.relayWAMessage(osk)
@@ -1269,9 +1269,9 @@ wa.me/${owner}`
               if (!q) return reply(`Use : ${command} cmd and tag sticker`)
               var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
               addCmd(kodenya, q)
-              textImg("Done!")
+              textImg("Başarılı!")
               } else {
-              reply('*Reply To Sticker*')
+              reply('*Stickera yanıt ver!*')
               }
               break
        case 'delcmd':
@@ -1279,7 +1279,7 @@ wa.me/${owner}`
               var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
               _scommand.splice(getCommandPosition(kodenya), 1)
               fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
-              textImg("Done!")
+              textImg("Başarılı!")
               break
        case 'listcmd':
               let teksnyee = `*「 LIST STICKER CMD 」*`
@@ -1298,7 +1298,7 @@ wa.me/${owner}`
 					for (let _ of anu) {
 					 bosco.deleteMessage(_.jid)
 					}
-					reply('*done*')
+					reply('*Başarılı!*')
 					break
          case 'setprefix':
 				prefix = args.join(' ')
@@ -1310,19 +1310,19 @@ wa.me/${owner}`
          case 'gc':
        case 'group':
         rows = [
-           {title: 'open', description: "", rowId: `OPEN`},
-           {title: 'close', description: "", rowId: `CLOSE`},
-           {title: 'on', description: "", rowId: `on`},
-           {title: 'off', description: "", rowId: `off`}]
-          section = [{title: "Sᴜʙsᴄɪʙᴇ Yᴛ Pᴇᴘᴇ Sɪʀ Fᴏʀ Mᴏʀᴇ Uᴘᴅᴀᴛᴇs", rows: rows}]
-          button = {buttonText: 'SELECT', description: `*Gʀᴏᴜᴘ [ᴏᴘᴇɴ/ᴄʟᴏsᴇ]*\n*Dɪsᴀᴘᴘᴇᴀʀ Mᴇsᴀᴀɢᴇ [ᴏɴ/ᴏғғ]*`,
+           {title: 'Açmak', description: "", rowId: `OPEN`},
+           {title: 'Kapatmak', description: "", rowId: `CLOSE`},
+           {title: 'Açık', description: "", rowId: `on`},
+           {title: 'Kapalı', description: "", rowId: `off`}]
+          section = [{title: "Laçin Eke YouTube kanalına ABONE OL!", rows: rows}]
+          button = {buttonText: 'SEÇ', description: `*Grup [Aç/Kapat]*\n*Kaybolan mesaj [Açmak/Kapatmak]*`,
           sections: section, listType: 1}
           bosco.sendMessage(from, button, MessageType.listMessage, {quoted: ftroli})
                     break
          case 'online':
             if (!isOwner && !mek.key.fromMe) return
 				offline = false
-				fgclink('*BOT ONLINE*')
+				fgclink('*BOT ÇEVRİMİÇİ*')
 				break
           case 'offline':
             if (!mek.key.fromMe) return 
@@ -1330,7 +1330,7 @@ wa.me/${owner}`
             waktu = Date.now()
             anuu = args.join(' ') ? args.join(' ') : '-'
             alasan = anuu
-            fgclink('*BOT OFFLINE*')
+            fgclink('*BOT ÇEVRİMDIŞI*')
             break   
           case 'tobc':
 					bosco.updatePresence(from, Presence.composing)
@@ -1361,7 +1361,7 @@ wa.me/${owner}`
 					bosco.sendMessage(_.jid, buff, gif, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 1000, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `𝑬𝑽𝑬𝑹𝒀𝑻𝑯𝑰𝑵𝑮\n𝑾𝑰𝑳𝑳 𝑩𝑬\n😎𝑶𝑲😎`, orderTitle: `ʙʀᴏᴀᴅᴄᴀsᴛ`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 22, isForwarded: true}})
 					}
 					} else {
-                    reply('*Reply To Sticker/Audio/Video*')
+                    reply('*Stickera/Sese/Videoya yanıt verin*')
 				    }
 					break
                case 'restart':
@@ -1369,7 +1369,7 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
 reply(`*Restarting*`)
 exec(`cd &&  node main`)
 sleep(4000)
-reply('*Success*')
+reply('*Başarılı!*')
 break
       case "setbgmpic":
         if (
@@ -1385,7 +1385,7 @@ break
               : mek;
           delb = await bosco.downloadMediaMessage(boij);
           fs.writeFileSync(`./hemme.jpg`, delb);
-          reply("Success");
+          reply("Başarılı!");
         } else {
           reply(`Send a picture with a caption ${prefix}sethumb`);
         }
@@ -1404,7 +1404,7 @@ break
               : mek;
           delb = await bosco.downloadMediaMessage(boij);
           fs.writeFileSync(`./ds.jpg`, delb);
-          reply("Success");
+          reply("Başarılı!");
         } else {
           reply(`Send a picture with a caption ${prefix}sethumb`);
         }
@@ -1415,7 +1415,7 @@ break
              if (!q) return reply(mess.wrongFormat)
              if (!arg.split('|')) return reply(`Use ${prefix}exif nama|author`)
              exif.create(arg.split('|')[0], arg.split('|')[1])
-             reply('*Succes*')
+             reply('*Başarılı!*')
              break	
           case 'axif':
                     if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -1423,22 +1423,22 @@ break
 					const namaPack = exifff.split('|')[0]
 					const authorPack = exifff.split('|')[1]
 					exif.create(namaPack, authorPack)
-					await reply('Done gan')
+					await reply('Bitti')
 				break
      case 'searchmsg':  //by ANU TEAM
-             if (args.length < 1) return reply(`*What Message Are You Looking For?*\n*Example* : ${prefix + command} halo|10`)
+             if (args.length < 1) return reply(`*Hangi mesajı arıyorsunuz?*\n*Example* : ${prefix + command} halo|10`)
              teks = arg
              if (teks.includes("|")) { 
              try {
              var ve = teks.split("|")[0]
              var za = teks.split("|")[1]
              sampai = `${za}`
-             if (isNaN(sampai)) return reply('*Must be a Number!*')
+             if (isNaN(sampai)) return reply('*Bir numara olmalı!*')
              batas = parseInt(sampai) + 1
-             if (batas > 30) return reply('*Max 30!*')
+             if (batas > 30) return reply('*Maksimum 30!*')
              reply(mess.wait)
              cok = await bosco.searchMessages(`${ve}`, from, batas,1) 
-             if (cok.messages.length < 2) return reply('*Message Not Found*') 
+             if (cok.messages.length < 2) return reply('*Mesaj bulunamadı!*') 
              if (cok.messages.length < parseInt(batas)) reply(`*Found Only* ${cok.messages.length - 1} *Message*`)
              for (i=1;i < cok.messages.length;i++) {
              if (cok.messages[i].message) {
@@ -1472,7 +1472,7 @@ break
              mentions(teks, tagg, true)
              } catch (e) {
              console.log(color(e))
-             reply('*Reply chat bot!*')
+             reply('*Sohbet botuna yanıtlayın!*')
 }
              break
       case 'leave':
@@ -1481,7 +1481,7 @@ break
               bosco.groupLeave(from) 
               }, 2000)
               setTimeout( () => {
-              reply('*Byee all..:(* 🚶')
+              reply('*Görüşmek üzere...')
               }, 0)
               break
        case 'online':
