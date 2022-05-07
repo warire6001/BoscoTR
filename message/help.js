@@ -1,6 +1,6 @@
 exports.gameMenu = (prefix) => {
     return `
-╔════ɢᴀᴍᴇ-ᴍᴇɴᴜ══════❥︎
+╔════OYUN-MENÜSÜ══════❥︎
 ╠➤ ${prefix}slot
 ╠➤ ${prefix}limitgame
 ╠➤ ${prefix}gelud @tag
@@ -20,13 +20,12 @@ exports.gameMenu = (prefix) => {
 ╠➤ ${prefix}tebaktebakan
 ╠➤ ${prefix}tebakgambar
 ╠➤ ${prefix}tebakbendera
-╠➤ ${prefix}suit *batu/kertas/gunting*
-╚════════════════❥︎
+╠➤ ${prefix}suit *taş/kağıt/makas*
 `
 }
 exports.funMenu = (prefix) => {
     return `
-╔════ғᴜɴ-ᴍᴇɴᴜ══════❥︎
+╔════EĞLENCE-MENÜSÜ══════❥︎
 ╠➤ ${prefix}mining
 ╠➤ ${prefix}togel
 ╠➤ ${prefix}cekwatak
@@ -52,48 +51,49 @@ exports.funMenu = (prefix) => {
 }
 exports.otherMenu = (prefix) => {
     return `
-╔════ᴏᴛʜᴇʀ-ᴍᴇɴᴜ══════❥︎
-╠➤ ${prefix}brainly *query*
-╠➤ ${prefix}shopee *product*
-╠➤ ${prefix}playstore *query*
-╠➤ ${prefix}ssweb *query*
-╠➤ ${prefix}google *query*
-╠➤ ${prefix}image *query*
-╠➤ ${prefix}pinterest *query*
-╠➤ ${prefix}nulis *teks*
-╠➤ ${prefix}iguser *ussername*
-╠➤ ${prefix}igstalk *username*
-╠➤ ${prefix}githubstalk *username*
-╠➤ ${prefix}tiktokstalk *ussername*
-╠➤ ${prefix}img2url *reply foto*
-╠➤ ${prefix}ytsearch *query*
+╔════DİĞER-MENÜLER══════❥︎
+╠➤ ${prefix}eke
+╠➤ ${prefix}telegram
+╠➤ ${prefix}brainly *Sorgu/Soru*
+╠➤ ${prefix}shopee *ürün*
+╠➤ ${prefix}playstore *Aranacak uygulama/oyun*
+╠➤ ${prefix}ssweb *Sorgu/Soru*
+╠➤ ${prefix}google *Aranacak kelime*
+╠➤ ${prefix}image *Fotoğrafın adı*
+╠➤ ${prefix}pinterest *Fotoğrafın adı*
+╠➤ ${prefix}nulis *Metin*
+╠➤ ${prefix}iguser *Kullanıcı adı*
+╠➤ ${prefix}igstalk *Kullanıcı adı*
+╠➤ ${prefix}githubstalk *Kullanıcı adı*
+╠➤ ${prefix}tiktokstalk *Kullanıcı adı*
+╠➤ ${prefix}img2url *Fotoğrafa yanıt vererek komutu yaz*
+╠➤ ${prefix}ytsearch *Aranacak video*
 ╚════════════════❥︎
 `
 }
 exports.stickerMenu = (prefix) => {
     return `
-╔════sᴛɪᴄᴋᴇʀ-ᴍᴇɴᴜ══════❥︎
-╠➤ ${prefix}dadu
+╔════STİCKER-MENÜSÜ══════❥︎
+╠➤ ${prefix}dadu *Zar*
 ╠➤ ${prefix}doge
 ╠➤ ${prefix}toimg
 ╠➤ ${prefix}patrick
 ╠➤ ${prefix}garwgura
-╠➤ ${prefix}ttg *teks*
-╠➤ ${prefix}attp *teks*
+╠➤ ${prefix}ttg *Metin*
+╠➤ ${prefix}attp *Metin*
 ╠➤ ${prefix}stickeranime
 ╠➤ ${prefix}semoji *emoji*
-╠➤ ${prefix}sticker *reply foto/video*
-╠➤ ${prefix}smeme *teks|teks*
-╠➤ ${prefix}swm *pack|author*
-╠➤ ${prefix}take *pack|author* 
-╠➤ ${prefix}tovideo *reply sgif*
-╚════════════════❥︎
+╠➤ ${prefix}sticker *Fotoğrafa/Videoya yanıt vererek o komutu yaz*
+╠➤ ${prefix}smeme *metin|metin*
+╠➤ ${prefix}swm *paket|yazar/yaratıcı*
+╠➤ ${prefix}take *paket|yazar/yaratıcı* 
+╠➤ ${prefix}tovideo *GİF'e yanıtlayarak yap!*
 `
 }
 exports.wibuMenu = (prefix) => {
     return `
 ╔════ᴡɪʙᴜ-ᴍᴇɴᴜ══════❥︎
-╠➤ ${prefix}loli
+╠➤ ${prefix}loli *Şeker*
 ╠➤ ${prefix}manga
 ╠➤ ${prefix}anime 
 ╠➤ ${prefix}lolivideo
@@ -114,56 +114,57 @@ exports.wibuMenu = (prefix) => {
 ╠➤ ${prefix}doujindesu
 ╠➤ ${prefix}otakuongoing
 ╠➤ ${prefix}nhentai *code*
-╠➤ ${prefix}nekopoi *link*
+╠➤ ${prefix}nekopoi *Link/Bağlantı*
 ╠➤ ${prefix}nekopoi3d
 ╠➤ ${prefix}nekopoicosplay
 ╠➤ ${prefix}cosplayanime
 ╠➤ ${prefix}nekopoisearch
-╚════════════════❥︎
 `
 }
 exports.ownerMenu = (prefix) => {
     return `
-╔════ᴏᴡɴᴇʀ-ᴍᴇɴᴜ══════❥︎
-╠➤ ${prefix}bc *teks*
+╔════KURUCU-MENÜSÜ══════❥︎
+╠➤ ${prefix}eke
+╠➤ ${prefix}telegram
+╠➤ ${prefix}bc *metin*
 ╠➤ ${prefix}term
 ╠➤ ${prefix}eval
 ╠➤ ${prefix}reset
 ╠➤ ${prefix}clearall
-╠➤ ${prefix}join *link gc*
+╠➤ ${prefix}join *GrupLinki*
 ╠➤ ${prefix}shutdown
 ╠➤ ${prefix}getquoted
-╠➤ ${prefix}addupdate *fiturnya*
-╠➤ ${prefix}exif *nama|author*
-╠➤ ${prefix}sewa add/del *waktunya*
-╠➤ ${prefix}premium add @tag|nomor
-╠➤ ${prefix}premium del @tag|nomor
+╠➤ ${prefix}addupdate *Güncelleme ekler*
+╠➤ ${prefix}exif *isim|yazar/yayıncı*
+╠➤ ${prefix}sewa add/del *zaman*
+╠➤ ${prefix}premium add @etiket|TelefonNumarası
+╠➤ ${prefix}premium del @etiket|TelefonNumarası
 ╚════════════════❥︎
 `
 }
 
 exports.groupMenu = (prefix) => {
     return`
-╔════ɢʀᴏᴜᴘ-ᴍᴇɴᴜ══════❥︎
+╔════GRUP-MENÜSÜ══════❥︎
 ╠➤ ${prefix}ceksewa
 ╠➤ ${prefix}group 
-╠➤ ${prefix}afk *alasan*
-╠➤ ${prefix}sider *reply chat bot*
-╠➤ ${prefix}kickall
-╠➤ ${prefix}infogrup
-╠➤ ${prefix}promote
-╠➤ ${prefix}demote
-╠➤ ${prefix}listonline
-╠➤ ${prefix}tagall *teks*
-╠➤ ${prefix}leave
-╠➤ ${prefix}mute
-╠➤ ${prefix}unmute
-╠➤ ${prefix}kick *reply*
-╠➤ ${prefix}add *+62xxxxxx*
-╠➤ ${prefix}setgrupname
-╠➤ ${prefix}setppgrup
-╠➤ ${prefix}setdesc
-╠➤ ${prefix}hidetag *teks/reply teks*
+╠➤ ${prefix}afk *AFK Kalma Sebebini yaz.*
+╠➤ ${prefix}sider *Sohbet botunu yanıtla.*
+╠➤ ${prefix}kickall *Hepsini at*
+╠➤ ${prefix}infogrup *grup bilgisi*
+╠➤ ${prefix}promote *yetki ver*
+╠➤ ${prefix}demote *yetkiyi al, aldığınız kişi yönetici olmayacak*
+╠➤ ${prefix}listonline *Çevrimiçi kişileri görüntüler, çevrimiçi olanları ise etiketler*
+╠➤ ${prefix}tagall *Etiketlenecek yazı.*
+╠➤ ${prefix}leave *gruptan ayrıl*
+╠➤ ${prefix}mute *sustur, sadece yöneticiler yazar*
+╠➤ ${prefix}unmute *susturmayı kapat, herkes gruba yazabilir*
+╠➤ ${prefix}kick *Yanıtlayarak yaz bu komutu*
+╠➤ ${prefix}add *+90numara (katılmaz ise + silerek yazın)*
+╠➤ ${prefix}setgrupname *grup adını değiştir*
+╠➤ ${prefix}setppgrup *grubun profil fotoğrafını değiştirir*
+╠➤ ${prefix}setdesc *gruba açıklamaa ekler*
+╠➤ ${prefix}hidetag *metin/metni yanıtla*
 ╠➤ ${prefix}welcome *enable | disable*
 ╠➤ ${prefix}antilink *enable | disable*
 ╠➤ ${prefix}leveling *enable | disable*
@@ -172,7 +173,7 @@ exports.groupMenu = (prefix) => {
 }
 exports.downloadMenu = (prefix) => {
     return `
-╔════ᴅᴏᴡɴʟᴏᴀᴅ-ᴍᴇɴᴜ══════❥︎
+╔════İNDİRME-MENÜSÜ══════❥︎
 ╠➤ ${prefix}fb 
 ╠➤ ${prefix}igdl 
 ╠➤ ${prefix}igdl2 
@@ -186,29 +187,29 @@ exports.downloadMenu = (prefix) => {
 ╠➤ ${prefix}tiktoknowm 
 ╠➤ ${prefix}tiktokaudio
 ╠➤ ${prefix}mediafire 
-╠➤ ${prefix}nhentaipdf *code*
+╠➤ ${prefix}nhentaipdf *kod*
 ╚════════════════❥︎
 `
 }
 exports.rulesBot = (prefix) => {
     return `
------[ RULES ]-----
+-----[ KURALLAR ]-----
 
-1. ᴅᴏɴᴛ sᴘᴀᴍ
+1. Laçin Eke YouTube Kanalına Abone OL https://youtube.com/c/LacinEke
 
-2. ᴅᴏɴᴛ ᴄᴀʟʟ
+2. TELEGRAM'a KATIL https://t.me/rlchat
 
-3. ᴅᴏɴT ᴘᴍ
+3. WHATSAPP GRUBUNA KATIL https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ
 
-ᴛᴏ ᴜsᴇ ʙᴏᴛ ${prefix}ᴍᴇɴᴜ
+BOTU KULLANMAK İÇİN ${prefix}ᴍᴇɴᴜ
 
-ᴏᴡɴᴇʀ ʙᴏᴛ:
-wa.me/6587255582
+BOTUN SAHİBİ:
+wa.me/905538834272
 `
 }
 exports.Menu = (prefix) => {
 return `
-╔════ɢᴀᴍᴇ-ᴍᴇɴᴜ══════❥︎
+╔════oyun-Menü══════❥︎
 ╠➤ ${prefix}slot
 ╠➤ ${prefix}limitgame
 ╠➤ ${prefix}gelud 
@@ -229,7 +230,7 @@ return `
 ╠➤ ${prefix}tebakgambar
 ╠➤ ${prefix}tebakbendera
 ╠➤ ${prefix}suit 
-╠════ғᴜɴ-ᴍᴇɴᴜ══════❥︎
+╠════Eğlence-Menü══════❥︎
 ╠➤ ${prefix}mining
 ╠➤ ${prefix}togel
 ╠➤ ${prefix}cekwatak
@@ -250,7 +251,7 @@ return `
 ╠➤ ${prefix}babi
 ╠➤ ${prefix}cekganteng
 ╠➤ ${prefix}cekcantik
-╠════ᴏᴛʜᴇʀ-ᴍᴇɴᴜ══════❥︎
+╠════Diğer-Menüler══════❥︎
 ╠➤ ${prefix}brainly 
 ╠➤ ${prefix}shopee 
 ╠➤ ${prefix}playstore 
@@ -265,21 +266,21 @@ return `
 ╠➤ ${prefix}tiktokstalk 
 ╠➤ ${prefix}img2url 
 ╠➤ ${prefix}ytsearch 
-╠════sᴛɪᴄᴋᴇʀ-ᴍᴇɴᴜ══════❥︎
-╠➤ ${prefix}dadu
+╠════Sticker-Menüsü══════❥︎
+╠➤ ${prefix}dadu *zar*
 ╠➤ ${prefix}doge
-╠➤ ${prefix}toimg
+╠➤ ${prefix}toimg *Stickera yanıt vererek komutu yaz*
 ╠➤ ${prefix}patrick
 ╠➤ ${prefix}garwgura
 ╠➤ ${prefix}ttg 
 ╠➤ ${prefix}attp 
 ╠➤ ${prefix}stickeranime
 ╠➤ ${prefix}semoji 
-╠➤ ${prefix}sticker 
+╠➤ ${prefix}sticker *fotoğrafa yanı vererek komutu yaz*
 ╠➤ ${prefix}smeme 
 ╠➤ ${prefix}swm 
 ╠➤ ${prefix}take 
-╠➤ ${prefix}tovideo 
+╠➤ ${prefix}tovideo *GİFe yanıtlayarak komutu yaz*
 ╠════ᴡɪʙᴜ-ᴍᴇɴᴜ══════❥︎
 ╠➤ ${prefix}loli
 ╠➤ ${prefix}manga
@@ -307,7 +308,7 @@ return `
 ╠➤ ${prefix}nekopoicosplay
 ╠➤ ${prefix}cosplayanime
 ╠➤ ${prefix}nekopoisearch
-╠════ᴏᴡɴᴇʀ-ᴍᴇɴᴜ══════❥︎
+╠════KURUCU-MENÜ══════❥︎
 ╠➤ ${prefix}bc 
 ╠➤ ${prefix}term
 ╠➤ ${prefix}eval
@@ -321,7 +322,7 @@ return `
 ╠➤ ${prefix}sewa add/del 
 ╠➤ ${prefix}premium add 
 ╠➤ ${prefix}premium del 
-╠════ɢʀᴏᴜᴘ-ᴍᴇɴᴜ══════❥︎
+╠════GRUP-MENÜ══════❥︎
 ╠➤ ${prefix}ceksewa
 ╠➤ ${prefix}group 
 ╠➤ ${prefix}afk 
@@ -344,7 +345,7 @@ return `
 ╠➤ ${prefix}welcome 
 ╠➤ ${prefix}antilink 
 ╠➤ ${prefix}leveling 
-╠════ᴅᴏᴡɴʟᴏᴀᴅ-ᴍᴇɴᴜ══════❥︎
+╠════İndirme-Menüsü══════❥︎
 ╠➤ ${prefix}fb 
 ╠➤ ${prefix}igdl 
 ╠➤ ${prefix}igdl2 
@@ -364,7 +365,7 @@ return `
 }
 exports.infoMenu = (prefix) => {
 return `
-╔════ɪɴғᴏ-ᴍᴇɴᴜ══════❥︎
+╔════Bilgi-Menüsü══════❥︎
 ╠➤ ${prefix}update
 ╠➤ ${prefix}level
 ╠➤ ${prefix}rules
@@ -381,7 +382,7 @@ return `
 ╠➤ ${prefix}cekpremium
 ╠➤ ${prefix}listpremium
 ╠➤ ${prefix}sourcecode
-╠➤ ${prefix}bugreport *keluhan*
+╠➤ ${prefix}bugreport *RaporlayacağınızBUG*
 ╚════════════════❥︎
 
 `
