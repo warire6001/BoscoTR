@@ -266,7 +266,7 @@ module.exports = bosco = async (bosco, mek) => {
              bosco.relayWAMessage(res)
         }
        const catlo = (teks) => {
-             res = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 70000, "message": teks, "footerText": "Made With Pepe", thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:ftroli})
+             res = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 70000, "message": teks, "footerText": "Made With laçin Eke YouTube", thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:ftroli})
              bosco.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -582,7 +582,7 @@ const ftrol = {
 			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
-					bosco.sendMessage(from, result, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 500, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${fake}`, orderTitle: `MADE BY DENIS`, sellerJid: '0@s.whatsapp.net'}}}})
+					bosco.sendMessage(from, result, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 500, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${fake}`, orderTitle: `MADE BY Laçin Eke YouTube`, sellerJid: '0@s.whatsapp.net'}}}})
 					}
 			}
 			for (let anje of videonye){
@@ -2528,13 +2528,13 @@ teks = `
 					fs.unlinkSync(media)
 					})
 					} else {
-						reply(`*Send Photos With Caption ${prefix}ocr*`)
+						reply(`*Altyazılı Fotoğraf Gönder! ${prefix}ocr*`)
 					}
 					break
       case 'tod':
               result =`*Truth Or Dare*\nPlayers are given the choice between answering questions honestly, or taking on the challenge given`
-              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
-              buttonsMessage = { contentText: `${result}`, footerText: 'Truth or challenge?', buttons: buttons, headerType: 1 }
+              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Gerçek'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
+              buttonsMessage = { contentText: `${result}`, footerText: 'Gerçek mi?, Cesaret mi??', buttons: buttons, headerType: 1 }
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
@@ -2544,7 +2544,7 @@ teks = `
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'owner'},type:1}]
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'© 𝒎𝒂𝒅𝒆 𝒃𝒚 𝒑𝒆𝒑𝒆', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'© 𝒎𝒂𝒅𝒆 𝒃𝒚 Laçin Eke YouTube', imageMessage: imageMsg,
               contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               bosco.relayWAMessage(prep)
@@ -2552,45 +2552,45 @@ teks = `
               break
         case 'song':
         case 'play':
-               if (args.length < 1) return reply('*What do you want to search?*')
+               if (args.length < 1) return reply('*Ne aramak istiyorsunuz?*')
                teks = args.join(' ')
                if (!teks.endsWith("-doc")){
                res = await yts(`${teks}`).catch(e => {
-               reply('*The Query Error You Entered Does Not Exist*')
+               reply('*Girdiğiniz Sorgu Hatası Yok!*')
                })
                let songs = `.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`
                res = await y2mateA(res.all[0].url).catch(e => {
-               reply('Error When Entering Y2mate Web')
+               reply('Y2mate Webe Girerken Hata oluştu!')
                })
-               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d-0xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','▢\x20Mᴀᴅᴇ\x20Bʏ\x20Wɪᴛʜ\x20Pᴇᴘᴇ\x20▢','https://youtu.be/OuYArP4quSA','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp4'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':mek,'thumbnail':denis,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':denis},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
+               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d-0xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','▢\x20Mᴀᴅᴇ\x20Bʏ\x20Wɪᴛʜ\x20Laçin\x20Eke','https://youtube/c/LacinEke','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp4'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':mek,'thumbnail':denis,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':denis},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
                }
                if (teks.endsWith("-doc")){
                const tec = teks.split("-doc")
                res = await yts(`${tec}`).catch(e => {
-               reply('*The Query Error You Entered Does Not Exist*')
+               reply('*Girdiğiniz Sorgu Hatası Yok!*')
                })
-               reply(`.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`)
+               reply(`.•♫•♬• Oynatılan ${res.all[0].title} •♬•♫•.`)
                let thumbInfo = `
-📜 Tɪᴛʟᴇ : ${res.all[0].title}
-🎁 Tʏᴘᴇ : mp3
+📜 Başlık : ${res.all[0].title}
+🎁 Tip/Tür : mp3
 📬 Iᴅ : ${res.all[0].videoId}
-🌐 Pᴜʙʟɪᴄᴀᴛɪᴏɴ : ${res.all[0].ago}
-🎞️ Wᴀᴛᴄʜᴇᴅ : ${res.all[0].views}
-⚖️ Dᴜʀᴀᴛɪᴏɴ : ${res.all[0].timestamp}
-🎥 Cʜᴀɴɴᴇʟ : ${res.all[0].author.name}
-🖇️ Lɪɴᴋ : ${res.all[0].author.url}
+🌐 Yayın : ${res.all[0].ago}
+🎞️ İzlendi : ${res.all[0].views}
+⚖️ Süre : ${res.all[0].timestamp}
+🎥 Kanal : ${res.all[0].author.name}
+🖇️ Liɴᴋ/Bağlantı : ${res.all[0].author.url}
 
 *Pʟᴇᴀsᴇ Wᴀɪᴛ Sᴏɴɢ Lᴏᴀᴅɪɴɢ....*`
 
                sendFileFromUrl(res.all[0].image, image, {quoted: mek, thumbnail: Buffer.alloc(0), caption: thumbInfo})
                res = await y2mateA(res.all[0].url).catch(e => {
-               reply('*Error When Entering Y2mate Web*')
+               reply('*Y2mate Webe Girerken Hata oluştu!*')
                })
                sendFileFromUrl(res[0].link, document, {quoted: mek, mimetype: 'audio/mp3', filename: res[0].output})
                }
                break
             case 'totag':
-			if (!isGroup) return reply(`*Send Only Group*`)
+			if (!isGroup) return reply(`*Sadece gruba gönder!*`)
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
             encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
             file = await bosco.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
@@ -2699,7 +2699,7 @@ teks = `
             bosco.sendMessage(from, ini_buffer, video, options)
             fs.unlinkSync(file)
         } else{
-          reply(`*Reply to Gif/Document/Audio/Video/Sticker Send Caption With ${prefix}totag*`)
+          reply(`*Gif/Belge/Ses/Video/Çıkartma Yanıtla Altyazı Gönder. ${prefix}totag*`)
         }
         break
          case 'forward':
@@ -2776,11 +2776,11 @@ case 'attp':
 })
 })
               } else {
-              reply(`*_Send an image with the caption ${prefix}sticker_*\n*_Sticker Video Duration 1-9 Seconds_*`)
+              reply(`*_Altyazılı bir resim gönder ${prefix}sticker_*\n*_Sticker Video Süresi 1 ila 9 Saniye_*`)
 }
               break
 case 'emoji':
-			if (!q) return fakegroup('*emoji where..?*')
+			if (!q) return fakegroup('*emoji nerede..?*')
 			qes = args.join(' ')
 			emoji.get(`${qes}`).then(emoji => {
 			teks = `${emoji.images[4].url}`
@@ -2794,15 +2794,15 @@ case 'emoji':
                    case 'addvn':
       case 'addbgm':
                     if (!isOwner) return 
-					if (!isQuotedAudio) return reply('*Reply to Audio*')
+					if (!isQuotedAudio) return reply('*Sesli mesaja yant ver!*')
 					nm = body.slice(7)
-					if (!nm) return reply('*What is The bgm name?*')
+					if (!nm) return reply('*Arka plan adı nedir?*')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					vien.push(`${nm}`)
 					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
 					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
-					bosco.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'hehe', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					bosco.sendMessage(from, `*Arka plan eklendi!*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'hehe', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					break
 	 case 'delvn':
 					try {
@@ -2810,7 +2810,7 @@ case 'emoji':
 					 wanu = vien.indexOf(nmm)
 					 vien.splice(wanu, 1)
 					 fs.unlinkSync(`./media/vn/${nmm}.mp3`)
-					bosco.sendMessage(from, `*Bgm Deleted*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 59, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: '𝒑𝒆𝒑𝒆', orderTitle: '𝒔𝒆𝒓', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					bosco.sendMessage(from, `*Arka plan kaldırıldı!*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 59, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: '𝒑𝒆𝒑𝒆', orderTitle: '𝒔𝒆𝒓', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -2823,14 +2823,14 @@ case 'emoji':
 					for (let awokwkwk of vien) {
 						teks += `- ${awokwkwk}\n`
 					}
-					teks += `\n*Tᴏᴛᴀʟ : ${vien.length}*\n\n_🍁_`
-					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝒑𝒆𝒑𝒆 𝒔𝒆𝒓${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://i.ibb.co/vkkcm0L/034c588fd8d5.jpg'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/919633687665'}`}},quoted: ftext})
+					teks += `\n*Tᴏplam : ${vien.length}*\n\n_🍁_`
+					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}Laçin Eke${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://telegra.ph/file/e782942b182931416ff88.jpg'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/+905538834272'}`}},quoted: ftext})
 					break
 				case 'addimage':
 				    if (!isOwner) return
-					if (!isQuotedImage) return reply('*Reply image*')
+					if (!isQuotedImage) return reply('*Resime yanıt verin!*')
 					nm = body.slice(10)
-					if (!nm) return reply('*Whats the name of the image?*')
+					if (!nm) return reply('*Resmin adı ne??*')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					imagi.push(`${nm}`)
@@ -2844,7 +2844,7 @@ case 'emoji':
 					 wanu = imagi.indexOf(nmm)
 					 imagi.splice(wanu, 1)
 					 fs.unlinkSync(`./media/image/${nmm}.jpg`)
-					 costum(from, 'Image Deleted', fake)
+					 costum(from, 'Resim silindi!', fake)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -2861,15 +2861,15 @@ case 'emoji':
 					break
               case 'addsticker':
                     if (!isOwner) return
-					if (!isQuotedSticker) return reply('*Reply To Sticker*')
+					if (!isQuotedSticker) return reply('*Stickera yanıt ver!*')
 					nm = body.slice(12)
-					if (!nm) return reply('*Sticker Name?*')
+					if (!nm) return reply('*Sticker adı?*')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					setik.push(`${nm}`)
 					fs.writeFileSync(`./media/sticker/${nm}.webp`, delb)
 					fs.writeFileSync('./database/setik.json', JSON.stringify(setik))
-					bosco.sendMessage(from, `*Sticker Added*`, MessageType.text, { quoted: mek })
+					bosco.sendMessage(from, `*Sticker eklendi!*`, MessageType.text, { quoted: mek })
 					break
 				case 'delsticker':
 					try {
@@ -2877,7 +2877,7 @@ case 'emoji':
 					 wanu = setik.indexOf(nmm)
 					 setik.splice(wanu, 1)
 					 fs.unlinkSync(`./media/sticker/${nmm}.webp`)
-					 costum(from, '*Sticker Deleted*', fake)
+					 costum(from, '*Sticker silindi!*', fake)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -2889,7 +2889,7 @@ case 'emoji':
 					for (let awokwkwk of imagi) {
 						teks += `- ${awokwkwk}\n`
 					}
-					teks += `\n*Total : ${imagi.length}*\n\n_Type Any Image_`
+					teks += `\n*Toplam : ${imagi.length}*\n\n_Herhangi Bir Resmi Yazın!_`
 					bosco.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": imagi } })
 					break
         
@@ -2911,7 +2911,7 @@ case 'emoji':
       case 'speed':
               timestampe = speed();
               latensie = speed() - timestampe
-              reply(`*「 𝙎𝙋𝙀𝙀𝘿 𝙏𝙀𝙎𝙏 」*\nRespond in ${latensie.toFixed(4)} Sec 💬`)
+              reply(`*「 HIS TESTİ 」*\nRespond in ${latensie.toFixed(4)} Sec 💬`)
               break
 
 //------------------< Game >-------------------
@@ -2921,17 +2921,17 @@ case 'emoji':
               somtoyy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
               somtoyyy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
               if (somtoyy  == '🍌 : 🍌 : 🍌') {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAZANDIN!*  ]`)
               } else if (somtoyy == '🍒 : 🍒 : 🍒') {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAZANDIN!*  ]`)
               } else if (somtoyy == '🔔 : 🔔 : 🔔') {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAZANDIN!*  ]`)
               } else if (somtoyy == '🍐 : 🍐 : 🍐') {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAZANDIN!*  ]`)
               } else if (somtoyy == '🍇 : 🍇 : 🍇') {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAZANDIN!*  ]`)
               } else {
-              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU LOSE*  ]`)
+              reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *SEN KAYBETTİN!!*  ]`)
               }
               break
 //------------------< Group >-------------------
@@ -2942,13 +2942,13 @@ case 'emoji':
 					if (!isGroup) return reply(mess.group())
 					if (!isOwner) return reply(mess.owner)
 					bosco.blockUser (`${body.slice(7)}@c.us`, "add")
-					bosco.sendMessage(from, `*ʙʟᴏᴄᴋᴇᴅ* ${body.slice(7)}@c.us`, text)
+					bosco.sendMessage(from, `*ENGELLENDİ!* ${body.slice(7)}@c.us`, text)
 					break
 		case 'unblock':
 					if (!isGroup) return reply(mess.group)
 					if (!isOwner) return reply(mess.owner)
 				    bosco.blockUser (`${body.slice(9)}@c.us`, "remove")
-					bosco.sendMessage(from, `*ᴜɴʙʟᴏᴄᴋᴇᴅ* ${body.slice(9)}@c.us`, text)
+					bosco.sendMessage(from, `*ENGEL KALDIRILDI!* ${body.slice(9)}@c.us`, text)
 					break
          case 'getpic':
 					if (!isGroup) return reply(mess.only.group)
@@ -2976,7 +2976,7 @@ case 'emoji':
                break
           case 'get':
         case 'fetch': //ambil dari nuru
-               if (!/^https?:\/\//.test(q)) return reply('Awali *URL* dengan http:// atau https://')
+               if (!/^https?:\/\//.test(q)) return reply('*URL* ön eki ile http:// veya https://')
                res = await fetch(q)
                if (res.headers.get('content-length') > 100 * 1024 * 1024 * 1024) {
                delete res
@@ -2993,19 +2993,19 @@ case 'emoji':
 }
                break
         case 'searchmsg':  //by ANU TEAM
-               if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
+               if (args.length < 1) return reply(`*Hangi mesaja bakıyordunuz??\nEx-: ${prefix + command} halo|10*`)
                teks = arg
                if (teks.includes("|")) { 
                try {
                var ve = teks.split("|")[0]
                var za = teks.split("|")[1]
                sampai = `${za}`
-               if (isNaN(sampai)) return reply('*Must be a Number!*')
+               if (isNaN(sampai)) return reply('*Bir numara olmalı!*')
                batas = parseInt(sampai) + 1
-               if (batas > 30) return reply('*Max 30!*')
+               if (batas > 30) return reply('*Maksimum 30!*')
                reply(mess.wait)
                cok = await bosco.searchMessages(`${ve}`, from, batas,1) 
-               if (cok.messages.length < 2) return reply('*Message Not Found*') 
+               if (cok.messages.length < 2) return reply('*Mesaj bulunamadı!*') 
                if (cok.messages.length < parseInt(batas)) reply(`*Found Only* ${cok.messages.length - 1} *Message*`)
                for (i=1;i < cok.messages.length;i++) {
                if (cok.messages[i].message) {
@@ -3016,7 +3016,7 @@ case 'emoji':
                return reply(String(e))
 }
                } else {
-               reply(`*The format is wrong tod This is an example of the correct format* : ${prefix + command} halo|10`)
+               reply(`*Biçim yanlış tod. Bu, doğru biçime bir örnektir* : ${prefix + command} halo|10`)
 }
                break
 
@@ -3164,7 +3164,7 @@ case 'emoji':
                  case 'sc':
                  case 'git':
 		case 'sourcecode':
-		function _0x1f50(_0x209a2e,_0x5079f5){var _0x1133bc=_0x44d2();return _0x1f50=function(_0x55ee06,_0x26680f){_0x55ee06=_0x55ee06-0x152;var _0x44d270=_0x1133bc[_0x55ee06];return _0x44d270;},_0x1f50(_0x209a2e,_0x5079f5);}var _0x2c057a=_0x1f50;function _0x44d2(){var _0x387e95=['hehe','5000bVYgeV','apply','4153655twAYRV','▢\x20Sᴜʙsᴄʀɪʙᴇ\x20Yᴛ\x20Pᴇᴘᴇ\x20Sɪʀ\x20▢','24CnBiap','split','toString','130QHbvJQ','search','ephemeralMessage','(((.+)+)+)+$','constructor','buttonsMessage','74744xOoftI','message','55002dqgfBH','prepareMessage','1847619gLtKAp','26345196LKPCHx','locationMessage','315jrFkZq','126mIOGQg','200427wIpjqE','10ujPZBD'];_0x44d2=function(){return _0x387e95;};return _0x44d2();}(function(_0x4617b3,_0xd7a238){var _0xc75b39=_0x1f50,_0x560992=_0x4617b3();while(!![]){try{var _0x1eea72=-parseInt(_0xc75b39(0x15b))/0x1*(parseInt(_0xc75b39(0x15f))/0x2)+-parseInt(_0xc75b39(0x15c))/0x3*(parseInt(_0xc75b39(0x163))/0x4)+parseInt(_0xc75b39(0x166))/0x5*(-parseInt(_0xc75b39(0x155))/0x6)+-parseInt(_0xc75b39(0x15a))/0x7*(parseInt(_0xc75b39(0x153))/0x8)+-parseInt(_0xc75b39(0x157))/0x9+-parseInt(_0xc75b39(0x15d))/0xa*(parseInt(_0xc75b39(0x161))/0xb)+parseInt(_0xc75b39(0x158))/0xc;if(_0x1eea72===_0xd7a238)break;else _0x560992['push'](_0x560992['shift']());}catch(_0x38e5cc){_0x560992['push'](_0x560992['shift']());}}}(_0x44d2,0x3a152));var _0x26680f=function(){var _0x1948f5=!![];return function(_0x1cdee3,_0x33a6ab){var _0x5361d5=_0x1948f5?function(){var _0x7c79c6=_0x1f50;if(_0x33a6ab){var _0x447793=_0x33a6ab[_0x7c79c6(0x160)](_0x1cdee3,arguments);return _0x33a6ab=null,_0x447793;}}:function(){};return _0x1948f5=![],_0x5361d5;};}(),_0x55ee06=_0x26680f(this,function(){var _0x19c139=_0x1f50;return _0x55ee06[_0x19c139(0x165)]()[_0x19c139(0x167)](_0x19c139(0x169))[_0x19c139(0x165)]()[_0x19c139(0x16a)](_0x55ee06)[_0x19c139(0x167)](_0x19c139(0x169));});_0x55ee06(),sc1=await bosco[_0x2c057a(0x156)](from,dfrply,location,{'thumbnail':dfrply}),sc2=sc1[_0x2c057a(0x154)][_0x2c057a(0x168)]?sc1['message']['ephemeralMessage']:sc1,sc='\x20Hɪ\x20Bʀᴏ\x20@'+sender[_0x2c057a(0x164)]('@')[0x0]+'Bᴏᴛ\x20Sᴄʀɪᴘᴛ\x20Wɪʟʟ\x20Bᴇ\x20Aᴠᴀɪʟᴀʙʟᴇ\x20Oɴ\x20👇\x0a\x0a\x22https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA\x22\x0a\x0a\x0a\x0a\x22https://github.com/pepesir/Bosco\x22\x0a\x0a',scbutton=[{'buttonId':prefix+'alive','buttonText':{'displayText':'🙌'},'type':0x1}],scmessage={'contentText':''+sc,'footerText':_0x2c057a(0x162),'buttons':scbutton,'headerType':0x6,'locationMessage':sc2['message'][_0x2c057a(0x159)]},bosco['sendMessage'](from,scmessage,MessageType[_0x2c057a(0x152)],{'caption':_0x2c057a(0x15e),'contextInfo':{'mentionedJid':[sender]}});
+		function _0x1f50(_0x209a2e,_0x5079f5){var _0x1133bc=_0x44d2();return _0x1f50=function(_0x55ee06,_0x26680f){_0x55ee06=_0x55ee06-0x152;var _0x44d270=_0x1133bc[_0x55ee06];return _0x44d270;},_0x1f50(_0x209a2e,_0x5079f5);}var _0x2c057a=_0x1f50;function _0x44d2(){var _0x387e95=['hehe','5000bVYgeV','apply','4153655twAYRV','▢\x20Laçin\x20Eke\x20YouTube\x20Kanalına\x20ABONE\x20OL','24CnBiap','split','toString','130QHbvJQ','search','ephemeralMessage','(((.+)+)+)+$','constructor','buttonsMessage','74744xOoftI','message','55002dqgfBH','prepareMessage','1847619gLtKAp','26345196LKPCHx','locationMessage','315jrFkZq','126mIOGQg','200427wIpjqE','10ujPZBD'];_0x44d2=function(){return _0x387e95;};return _0x44d2();}(function(_0x4617b3,_0xd7a238){var _0xc75b39=_0x1f50,_0x560992=_0x4617b3();while(!![]){try{var _0x1eea72=-parseInt(_0xc75b39(0x15b))/0x1*(parseInt(_0xc75b39(0x15f))/0x2)+-parseInt(_0xc75b39(0x15c))/0x3*(parseInt(_0xc75b39(0x163))/0x4)+parseInt(_0xc75b39(0x166))/0x5*(-parseInt(_0xc75b39(0x155))/0x6)+-parseInt(_0xc75b39(0x15a))/0x7*(parseInt(_0xc75b39(0x153))/0x8)+-parseInt(_0xc75b39(0x157))/0x9+-parseInt(_0xc75b39(0x15d))/0xa*(parseInt(_0xc75b39(0x161))/0xb)+parseInt(_0xc75b39(0x158))/0xc;if(_0x1eea72===_0xd7a238)break;else _0x560992['push'](_0x560992['shift']());}catch(_0x38e5cc){_0x560992['push'](_0x560992['shift']());}}}(_0x44d2,0x3a152));var _0x26680f=function(){var _0x1948f5=!![];return function(_0x1cdee3,_0x33a6ab){var _0x5361d5=_0x1948f5?function(){var _0x7c79c6=_0x1f50;if(_0x33a6ab){var _0x447793=_0x33a6ab[_0x7c79c6(0x160)](_0x1cdee3,arguments);return _0x33a6ab=null,_0x447793;}}:function(){};return _0x1948f5=![],_0x5361d5;};}(),_0x55ee06=_0x26680f(this,function(){var _0x19c139=_0x1f50;return _0x55ee06[_0x19c139(0x165)]()[_0x19c139(0x167)](_0x19c139(0x169))[_0x19c139(0x165)]()[_0x19c139(0x16a)](_0x55ee06)[_0x19c139(0x167)](_0x19c139(0x169));});_0x55ee06(),sc1=await bosco[_0x2c057a(0x156)](from,dfrply,location,{'thumbnail':dfrply}),sc2=sc1[_0x2c057a(0x154)][_0x2c057a(0x168)]?sc1['message']['ephemeralMessage']:sc1,sc='\x20Selam\x20Dostum\x20@'+sender[_0x2c057a(0x164)]('@')[0x0]+'Bᴏᴛ\x20komut\x20Dosyası\x20Şurada\x20Mevcut\x20Olacak\x20👇\x0a\x0a\x22https://youtube.com/c/LacinEke\x22\x0a\x0a\x0a\x0a\x22https://github.com/EkeLachin/BoscoTR\x22\x0a\x0a',scbutton=[{'buttonId':prefix+'alive','buttonText':{'displayText':'🙌'},'type':0x1}],scmessage={'contentText':''+sc,'footerText':_0x2c057a(0x162),'buttons':scbutton,'headerType':0x6,'locationMessage':sc2['message'][_0x2c057a(0x159)]},bosco['sendMessage'](from,scmessage,MessageType[_0x2c057a(0x152)],{'caption':_0x2c057a(0x15e),'contextInfo':{'mentionedJid':[sender]}});
 		break
         case 'isbaileys': 
 case 'bail': 
@@ -3179,23 +3179,23 @@ reply(`${mek.quoted.caption}`)
 }
 break
 case 'q': 
-if (!m.quoted) return reply('reply message!')
+if (!m.quoted) return reply('Mesaja yanıt ver!')
 let qse = bosco.serializeM(await m.getQuotedObj())
-if (!qse.quoted) return reply('the message you replied does not contain a reply!')
+if (!qse.quoted) return reply('Cevapladığınız mesaj cevap içermiyor!')
 await qse.quoted.copyNForward(m.chat, true)
 break
      case 'groplist':
                 case 'grouplist':
-  const txs = bosco.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`- ${bosco.getName(v.jid)}\n${v.jid}\n[${v.read_only ? 'Left' : 'Joined'}]`).join`\n\n`
+  const txs = bosco.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`- ${bosco.getName(v.jid)}\n${v.jid}\n[${v.read_only ? 'Ayrıldı' : 'Katıldı'}]`).join`\n\n`
   reply(txs)
   break
      
      
            case 'wiki':
-if (args.length < 1) return reply('*What Are You Looking For?*')
+if (args.length < 1) return reply('*Neyi aramıştınız?*')
 teks = args.join(' ')
 res = await wikiSearch(teks).catch(e => {
-return reply('*Error Result Not Found*') 
+return reply('*Hata! Arama sonucu bulunamadı!*') 
 }) 
 result = `*Judul :* ${res[0].judul}
 *Wiki :* ${res[0].wiki}`
@@ -3208,15 +3208,15 @@ if (!isQuotedSticker && !isQuotedAudio && !isQuotedImage && budy.length > 10) {
 teks = body.slice(8)
 oi1 = teks.split('|')[0]
 oi2 = teks.split('|')[1]
-if (Number(oi2) >= 50) return reply('*Most!*')
-if (!Number(oi2)) return reply('*The number must be a number!*')
+if (Number(oi2) >= 50) return reply('*En çok!*')
+if (!Number(oi2)) return reply('*Sayı bir sayı olmalıdır!*')
 	  for (let i = 0; i < oi2; i++) {
 	  bosco.sendMessage(from, `${oi1}`, MessageType.text)
 	  }
 } else if (!isQuotedSticker && !isQuotedAudio && !isQuotedImage && budy.length < 10) {
 teks = mek.message.extendedTextMessage.contextInfo.quotedMessage.conversation
-if (!Number(args[0])) return reply('*The number must be a number!*')
-if (Number(args[0]) >= 50) return reply('*Most!*')
+if (!Number(args[0])) return reply('*Sayı bir sayı olmalıdır!*')
+if (Number(args[0]) >= 50) return reply('*En çok!*')
 	  for (let i = 0; i < args[0]; i++) {
 	  bosco.sendMessage(from, teks, MessageType.text)
 	  }
@@ -3224,8 +3224,8 @@ if (Number(args[0]) >= 50) return reply('*Most!*')
 	encmedian = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	         median = await bosco.downloadAndSaveMediaMessage(encmedian)
 				anu = fs.readFileSync(median)
-	if (!Number(args[0])) return reply('*The number must be a number!*')
-	if (Number(args[0]) >= 50) return reply('*Most!*')
+	if (!Number(args[0])) return reply('*Sayı bir sayı olmalıdır*')
+	if (Number(args[0]) >= 50) return reply('*En çok!*')
 	  for (let i = 0; i < args[0]; i++) {
 	  bosco.sendMessage(from, anu, sticker)
 	  }
@@ -3233,8 +3233,8 @@ if (Number(args[0]) >= 50) return reply('*Most!*')
 	encmediat = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	            mediat = await bosco.downloadAndSaveMediaMessage(encmediat)
 				anu = fs.readFileSync(mediat)
-	if (!Number(args[0])) return reply('*The number must be a number!*')
-	if (Number(args[0]) >= 50) return reply('*Most!*')
+	if (!Number(args[0])) return reply('*Sayı bir sayı olmalıdır*')
+	if (Number(args[0]) >= 50) return reply('*En çok!*')
 	  for (let i = 0; i < args[0]; i++) {
 	  bosco.sendMessage(from, anu, audio, {mimetype: 'audio/mp4', duration: 359996400, ptt:true})
 	  }
@@ -3244,8 +3244,8 @@ if (Number(args[0]) >= 50) return reply('*Most!*')
 	teks = body.slice(6)
 	oi1 = teks.split('|')[0]
 oi2 = teks.split('|')[1]
-if (Number(oi2) >= 50) return reply('*Most!*')
-	if (!Number(oi2)) return reply('*The number must be a number!*')
+if (Number(oi2) >= 50) return reply('*En çok!*')
+	if (!Number(oi2)) return reply('*Sayı bir sayı olmalıdır*')
 	  for (let i = 0; i < oi2; i++) {
 	  bosco.sendMessage(from, delb, MessageType.image, {caption: oi1})
 	  }
@@ -3253,20 +3253,20 @@ if (Number(oi2) >= 50) return reply('*Most!*')
 	  break
       case 'delchat':
                     if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
-                reply('*Successfully delete chat*' + from)
+                reply('*Sohbet başarıyla temizlendi!*' + from)
                 await sleep(4000)
                 bosco.modifyChat(from, ChatModification.delete)
                 break
      case 'mute':
 			    if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
 			    if (!isGroup) return reply(mess.only.group)
-                if (isMuted) return reply(`*already muted*`)
+                if (isMuted) return reply(`*Zaten susturuldu*`)
                 mute.push(from)
                 fs.writeFileSync('./database/mute.json', JSON.stringify(mute))
-                reply('*The bot has been successfully muted in this chat*')
+                reply('*Bot, bu sohbette başarıyla susturuldu!*')
                 break
      case 'tts':
-					if (args.length < 1) return bosco.sendMessage(from, `Kode bahasanya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
+					if (args.length < 1) return bosco.sendMessage(from, `Dil kodu nerede? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
 				   const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return bosco.sendMessage(from, `Teksnya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
 					var bby = body.slice(8)
