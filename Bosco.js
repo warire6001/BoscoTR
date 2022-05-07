@@ -1,9 +1,10 @@
 /* 
-Don't change credits🥲🚶
-Sourcecode https://github.com/pepesir/Bosco
+Laçin Eke YouTube Kanalına ABONE OL! https://youtube.com/c/LacinEke
+Kayank Kodu: https://github.com/EkeLachin/BoscoTR
 
-Want to recode? yes, it's up to you as long as you don't change the watermark
-Don't sell the SC 😐👌
+Açık kaynaklı olduğu için istediğiniz komutu ekleyip kullanabilirsiniz! (BEN YAZILIMCI DEĞİLİM!)
+TELEGRAM https://t.me/rlchat
+WHATSAPP https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ
 */
 const {
     WAConnection,
@@ -1500,14 +1501,14 @@ break
              if (args.length == 0) return reply(`Ex:- ${prefix}join https://chat.whatsapp.com`)
              if (!q) return reply('*The link?*')
              if (!isOwner) return reply(mess.only.owner)
-             if (!isUrl(args[0]) && !args[0].includes('https://chat.whatsapp.com/')) return reply('*The link is invalid Tod*')
+             if (!isUrl(args[0]) && !args[0].includes('https://chat.whatsapp.com/')) return reply('*Bağlantı Geçersiz!*')
              link = args[0].replace('https://chat.whatsapp.com/','')
              fak = bosco.query({ json: ['action', 'invite', link],
              expect200: true })
-             reply('*Successfully Entered Group*')
+             reply('*Başarılı bir şekilde gruba katıldınız!*')
              break
       case 'readall':
-					if (!mek.key.fromMe) return reply('```OWNER ONLY```')
+					if (!mek.key.fromMe) return reply('```SADECE KURUCU/SAHİP```')
 					var chats = await bosco.chats.all()
                     chats.map( async ({ jid }) => {
                           await bosco.chatRead(jid)
@@ -1547,17 +1548,17 @@ break
       case 'ytmp3':
       case 'yt':
       case 'video':
-             if (args.length < 1) return reply('*Where is the link?*')
+             if (args.length < 1) return reply('*Link/Bağlantı nerede?*')
              if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
              teks = args.join(' ')
              res = await y2mateA(teks).catch(e => {
-             reply('*Error Failed To Enter Y2mate Web*')
+             reply('*y2Mate Web girerken hata oluştu!*')
 })
              result = `
 *Tɪᴛʟᴇ :* ${res[0].judul}
 *Tʏᴘᴇ :* mp3/mp4
 *Sɪᴢᴇ :* ${res[0].size}`
-              buttons = [{buttonId: `${prefix}buttons2 ${q}`,buttonText:{displayText: 'ᴠɪᴅᴇᴏ'},type:1},{buttonId:`${prefix}buttons1 ${q}`,buttonText:{displayText:'ᴀᴜᴅɪᴏ'},type:1}]
+              buttons = [{buttonId: `${prefix}buttons2 ${q}`,buttonText:{displayText: 'ᴠɪᴅᴇᴏ'},type:1},{buttonId:`${prefix}buttons1 ${q}`,buttonText:{displayText:'SES'},type:1}]
               fs.writeFileSync(`./ytmp.jpeg`, await getBuffer(res[0].thumb))
               yt1 = await bosco.prepareMessage(from, fs.readFileSync(`./ytmp.jpeg`), location, {thumbnail: fs.readFileSync(`./ytmp.jpeg`),})
               yt2 = yt1.message["ephemeralMessage"] ? yt1.message.ephemeralMessage : yt1
@@ -1573,7 +1574,7 @@ break
 				for (let xyz of readallid) {
 					await bosco.chatRead(xyz.jid)
 				}
-		      bosco.sendMessage(from, `Sukses!`, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "mimetype": "image/jpeg", "caption": "Berhasil membaca semua chat!", 'jpegThumbnail': fs.readFileSync('./ds.jpg')}}}})
+		      bosco.sendMessage(from, `Sukses!`, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "mimetype": "image/jpeg", "caption": "Tüm sohbetleri başarıyla okundu!", 'jpegThumbnail': fs.readFileSync('./ds.jpg')}}}})
               break
       case 'shutdown':
              if (!isOwner) return reply(mess.owner.only)
@@ -1611,7 +1612,7 @@ break
        case 'denis':
               if (!q) return
               qq = q.toUpperCase()
-              awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, Pepe Poli Ahn ${qq} Pepe Killadi Ahnu ${qq} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~ AAAAAH ${qq} keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${qq} AAAAA LUCCUUUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${qq} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${qq} gw ... ${qq} di laptop ngeliatin gw, ${qq} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${q} aku gak mau merelakan ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${qq} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH`
+              awikwok = `${qq} ${qq} ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${q} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL! ${qq} Laçin Eke YouTube Kanalına Abone OL!`
               reply(awikwok)
               break
         case 'jadibot':
@@ -1623,7 +1624,7 @@ break
              break
       case 'listbot':
       case 'listjadibot':
-          text = '*「 LIST JADIBOT 」*\n\n'
+          text = '*「 JADİBOT LİSTESİ 」*\n\n'
              for(let i of listjadibot) {
              text += `*Number* : ${i.jid.split('@')[0]}
 *Name* : ${i.name}
@@ -1671,14 +1672,14 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 					fs.unlinkSync(media)
-					if (err) return reply('*_ғᴀɪʟᴅ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴘᴛᴛ_*')
+					if (err) return reply('*_Hata! ptt dönüştürülemedi!_*')
 					topt = fs.readFileSync(ran)
 					bosco.sendMessage(from, topt, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					})
 					break
                case 'take':
               case 'colong':
-                    if (!isQuotedSticker) return reply('*Just a sticker*')
+                    if (!isQuotedSticker) return reply('*Sadece bir sticker*')
                     encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
                     anu = args.join(' ').split('|')
@@ -1688,7 +1689,7 @@ break
 			        require('./lib/fetch.js').modStick(media, bosco, mek, from)
 			        break
              case 'fastvid':
-		            if (!isQuotedVideo) return fakeitem('Reply videonya!')
+		            if (!isQuotedVideo) return fakeitem('Videoyu yanıtla!')
 		            fakegroup(mess.wait)
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
@@ -1702,7 +1703,7 @@ break
 		            })
 		            break
 		    case 'slowvid':
-		            if (!isQuotedVideo) return fakeitem('Reply videonya!')
+		            if (!isQuotedVideo) return fakeitem('Videoyu yanıtla!')
 		            fakegroup(mess.wait)
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
@@ -1716,7 +1717,7 @@ break
 		            })
 		            break
 		    case 'reversevid':
-		            if (!isQuotedVideo) return fakeitem('```Reply videonya!```')
+		            if (!isQuotedVideo) return fakeitem('```Videoyu yanıtla!```')
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
 		            ran = getRandom('.mp4')
@@ -1729,13 +1730,13 @@ break
 		            })
 		            break
              case 'nightcore':
-	                 if (!isQuotedAudio) return reply('Reply audio nya om')
+	                 if (!isQuotedAudio) return reply('Sesli mesaja yanıt ver!')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a atempo=1.06,asetrate=44100*1.25 ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Hata!')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: ftoko,duration:11})
 						fs.unlinkSync(ran)
@@ -1744,13 +1745,13 @@ break
 		    
              case 'imut':
              case 'baby':
-                   if (!isQuotedAudio) return fgclink('reply to audio')
+                   if (!isQuotedAudio) return fgclink('Sesli mesaja yanıt ver!')
 				    encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -af atempo=3/4,asetrate=44508*4/3 ${ran}`, (err, stderr, stdout) => {
 				    fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Hata!')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt: true, quoted: mek})
 					fs.unlinkSync(ran)
@@ -1762,19 +1763,19 @@ break
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} "origin(rgb24).png" -c:v libx264 -preset placebo -qp 0 -x264-params "keyint=15:no-deblock=1" -pix_fmt yuv444p10le -sws_flags spline+accurate_rnd+full_chroma_int -vf "colormatrix=bt470bg:bt709" -color_range 1 -colorspace 1 -color_primaries 1 -color_trc 1 "colormatrix_yuv444p10le.avi" ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Hata!')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, video, { mimetype: 'video/mp4', quoted: ftoko })
 					})
 					break
            case 'fast':
-                     if (!isQuotedAudio) return fgclink('reply to audio')
+                     if (!isQuotedAudio) return fgclink('Sesli mesaja yanıt ver!')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=1.3,asetrate=43000" ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Hata!')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: ftext})
 						fs.unlinkSync(ran)
@@ -1795,13 +1796,13 @@ break
 					break
             case 'balik':
             case 'reverse':
-                  if (!isQuotedAudio) return fgclink('reply to audio')
+                  if (!isQuotedAudio) return fgclink('Sesli mesaja yanıt ver!')
 	              encmediau = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	              mediau = await bosco.downloadAndSaveMediaMessage(encmediau)
 	              ran = getRandom('.mp3')
 	              exec(`ffmpeg -i ${mediau} -filter_complex "areverse" ${ran}`, (err, stderr, stdout) => {
                   fs.unlinkSync(mediau)
-                  if (err) return reply('Error!')
+                  if (err) return reply('Hata!')
                   hah = fs.readFileSync(ran)
                   bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt: true, duration: 359996400, quoted:mek})
                   fs.unlinkSync(ran)
@@ -1809,26 +1810,26 @@ break
                   break
             case 'bass':
             case 'volume':
-                    if (!isQuotedAudio) return fgclink('reply to audio')
+                    if (!isQuotedAudio) return fgclink('Sesli mesaja yanıt ver!')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -af equalizer=f=65:width_type=o:width=3:g=20 ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Hata!')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
 				     })
 				    break
              case 'slow':
-                    if (!isQuotedAudio) return fgclink('reply to audio')
+                    if (!isQuotedAudio) return fgclink('Sesli mesaja yanıt ver!')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=0.7,asetrate=43120" ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Hata!')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
@@ -1859,20 +1860,20 @@ break
 					 })
 				    break
 				case 'fat':
-	                 if (!isQuotedAudio) return reply('*_ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ_*')
+	                 if (!isQuotedAudio) return reply('*_Sesli mesaja yanıt ver!_*')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=1.1,asetrate=35101" ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('*ʀᴇᴛʀʏ!*')
+					if (err) return reply('*TEKRAR DENE!*')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
 				     })
 				     break
       case 'tomp4':
-					if (!isQuotedSticker) return reply('Reply stiker nya')
+					if (!isQuotedSticker) return reply('Stickera yanıt ver!')
                                         reply(mess.wait)
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
             ger = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -1881,7 +1882,7 @@ break
             sendMediaURL(from,res.result)
             })
             }else {
-            reply('Reply Stickernya!')
+            reply('Stickera yanıt ver!')
             }
             fs.unlinkSync(owgi)
             break
@@ -1900,8 +1901,8 @@ break
 					})
 					break
       case 'kick':
-if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isOwner && !isGroupAdmins) return reply('*Sadece grubun yöneticisi!*')
+if (!isBotGroupAdmins) return reply('*Bot yönetici değil!!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1921,8 +1922,8 @@ bosco.groupRemove(from, [entah])
 }
 break
 case 'add':
-      if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+      if (!isOwner && !isGroupAdmins) return reply('*Sadece grubun yöneticisi!*')
+if (!isBotGroupAdmins) return reply('*Bot yönetici deği!!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1942,8 +1943,8 @@ bosco.groupAdd(from, [entah])
 }
 break
 case 'promote':
-if (!isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isGroupAdmins) return reply('*Sadece grubun yöneticisi!*')
+if (!isBotGroupAdmins) return reply('*Bot yönetici değil!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1963,8 +1964,8 @@ bosco.groupMakeAdmin(from, [entah])
 }
 break
 case 'demote':
-      if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+      if (!isOwner && !isGroupAdmins) return reply('*Sadece grubun yöneticisi!*')
+if (!isBotGroupAdmins) return reply('*Bot yönetici değil!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1987,7 +1988,7 @@ break
       case 'bc':
 					bosco.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply('*Where is Text?*')
+					if (args.length < 1) return reply('*Metin nerde?*')
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2052,8 +2053,8 @@ break
                           }
                           break
            case 'chat':
-			if (args[0].startsWith('08')) return reply('*Prefix number with 91*')
-            if (args[0].startsWith('+91')) return reply('*Prefix number with 91*')
+			if (args[0].startsWith('08')) return reply('*+90 ile önek numarası*')
+            if (args[0].startsWith('+91')) return reply('*91 ile önek numarası*')
 			if (args.length < 1) return reply(`Penggunaan ${prefix}chat 91xxxx|teks`)
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
@@ -2068,15 +2069,15 @@ break
                         break
       case 'toimg':
       case 'photo':
-              if (!isQuotedSticker) return reply('*Reply To Sticker*')
+              if (!isQuotedSticker) return reply('*Stickera yanıt ver!*')
               encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
               media = await bosco.downloadAndSaveMediaMessage(encmedia)
               ran = getRandom('.png')
               exec(`ffmpeg -i ${media} ${ran}`, (err) => {
               fs.unlinkSync(media)
-              if (err) return reply('*Failed, when converting sticker to image*')
+              if (err) return reply('*Stickerı resme dönüştürürken hata oluştu!*')
               buffer = fs.readFileSync(ran)
-              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: 'By Bosco'})
+              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: 'By Laçin Eke YouTube'})
               fs.unlinkSync(ran)
 })
               break
@@ -2100,7 +2101,7 @@ break
 
        case 'igdl': 
        case 'instagram':
-              if (!q) return reply('*Which Links?*')
+              if (!q) return reply('*Hangi Linkler/Bağlantılar?*')
               if (!q.includes('instagram')) return reply(mess.error.Iv)
               reply(mess.wait)
               anu = await igDownloader(`${q}`)
@@ -2108,7 +2109,7 @@ break
              .catch((err) => { reply(String(err)) })
               break
        case 'igstory': 
-              if(!q) return reply('*Username?*')
+              if(!q) return reply('*Kullanıcı adı*')
               hx.igstory(q)
              .then(async result => {
               for(let i of result.medias){
@@ -2166,12 +2167,12 @@ break
               a = `*Youtube Search 🔎*\n`
 for (let i of res.all) {
 a += `
-📜 Title : ${i.title}
-🎞️ Views : ${i.views}
-🌐 Upload : ${i.ago}
-⏱️ Duration : ${i.timestamp}
-🎥 Channel : ${i.author.name}
-🖇️ Link : ${i.url}\n`
+📜 Başlık : ${i.title}
+🎞️ İzlenme : ${i.views}
+🌐 Yüklenme : ${i.ago}
+⏱️ Süre : ${i.timestamp}
+🎥 Kanal : ${i.author.name}
+🖇️ Link/Bağlantı : ${i.url}\n`
 }
                b = a.trim()
                sendFileFromUrl(res.all[0].image, image, {quoted: mek, thumbnail: Buffer.alloc(0), caption: b})
@@ -2182,7 +2183,7 @@ a += `
                break
         case 'scplay': 
        case 'soundcloud':
-              if (!q) return reply('Which Links?')
+              if (!q) return reply('Hangi Linkler/Bağlantılar?')
               if (!q.includes('soundcloud')) return reply(mess.error.Iv)
               reply(mess.wait)
               anu = await fetchJson(`https://api.lolhuman.xyz/api/soundcloud?apikey=${lolkey}&url=${q}`)
@@ -2197,7 +2198,7 @@ a += `
                res = await uploadImages(owgi)
                reply(res)
                } else {
-               reply('*_Send to Reply Pictures/Videos_*')
+               reply('*_Fotoğrafları/Videoları Yanıtlamak İçin Gönder_*')
 }
                break
        case 'telesticker': 
@@ -2215,7 +2216,7 @@ a += `
        case 'ghsearch': 
        case 'githubsearch': 
        case 'searchgithub':
-             if (!q) return reply('*What are you looking for?*')
+             if (!q) return reply('*Ne araştırıyordunuz?*')
              res = await fetch('https://api.github.com/search/repositories?q='+q)
              json = await res.json()
              if (res.status !== 200) throw json
@@ -2236,12 +2237,12 @@ ${repo.open_issues} Issue${repo.description ? `
      case 'image':
      case 'gimage':
      case 'googleimage':
-              if (args.length < 1) return reply('*What do you want to search?*')
+              if (args.length < 1) return reply('*Ne aramak istiyorsunuz?*')
               reply(mess.wait)
               teks = args.join(' ')
               res = await _gis(teks, google)
               function google(error, result){
-              if (error){ return reply('*Error An Error Occurs Or No Result Found*')}
+              if (error){ return reply('*Hata! Bir Hata Oluşuyor veya Sonuç Bulunamadı*')}
               else {
               gugIm = result
               random =  gugIm[Math.floor(Math.random() * gugIm.length)].url
@@ -2250,14 +2251,14 @@ ${repo.open_issues} Issue${repo.description ? `
               }
              break
       case 'tiktokdl':
-              if (!q) return reply('The link?')
+              if (!q) return reply('Link/Bağlantı nerde?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
               data = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=${lolkey}&url=${q}`)
-              result = `⚜️ *Nickname*: ${data.result.author.nickname}\n❤️ *Like*: ${data.result.statistic.diggCount}\n💬 *Comment*: ${data.result.statistic.commentCount}\n🔁 *Share*: ${data.result.statistic.shareCount}\n🎞️ *Views*: ${data.result.statistic.playCount}\n📑 *Desc*: ${data.result.title}`
-              buttons = [{buttonId: `${prefix}buttons3 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}buttons4 ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
+              result = `⚜️ *Kullanıcı adı*: ${data.result.author.nickname}\n❤️ *Beğen*: ${data.result.statistic.diggCount}\n💬 *Yorum*: ${data.result.statistic.commentCount}\n🔁 *Paylaş*: ${data.result.statistic.shareCount}\n🎞️ *İzlenme*: ${data.result.statistic.playCount}\n📑 *Açıklama*: ${data.result.title}`
+              buttons = [{buttonId: `${prefix}buttons3 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}buttons4 ${q}`,buttonText:{displayText:'🎵 Ses'},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.result.thumbnail))
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'Choose a format below', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Aşağıdan bir biçim seçin!', imageMessage: imageMsg,
               contentText:`${result}`,buttons,headerType:4}
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               bosco.relayWAMessage(prep)
@@ -2265,7 +2266,7 @@ ${repo.open_issues} Issue${repo.description ? `
               break
       case 'ttnowm': 
       case 'tiktoknowm':
-             if (!q) return reply('The link?')
+             if (!q) return reply('Link/Bağlantı nerde?')
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
              anu = await TiktokDownloader(`${q}`)
@@ -2287,7 +2288,7 @@ ${repo.open_issues} Issue${repo.description ? `
               googleIt({ 'query': q }).then(results => {
               vars = `_*Search result : ${q}*_\n`
               for (let i = 0; i < results.length; i++) {
-              vars +=  `\n━━━━━━━━━━━━━━━━━\n\n*Title:* ${results[i].title}\n\n*Description:* ${results[i].snippet}\n\n*Link:* ${results[i].link}\n`
+              vars +=  `\n━━━━━━━━━━━━━━━━━\n\n*Başlık:* ${results[i].title}\n\n*Açıklama:* ${results[i].snippet}\n\n*Link/Bağlantı:* ${results[i].link}\n`
                }
                bosco.sendMessage(from, ss, image, {caption: vars, quoted : mek, thumbnail: Buffer.alloc(0) })
                }).catch(e => {
@@ -2306,16 +2307,16 @@ ${repo.open_issues} Issue${repo.description ? `
                  }
                break
         case 'mediafire':
-               if (args.length < 1) return reply('*Where is the link?*')
+               if (args.length < 1) return reply('*Link/Bağlantı nerede?*')
                if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply(mess.error.Iv)
                teks = args.join(' ')
                res = await mediafireDl(teks)
                result = `*MediaFire Downloader*
       
-📜 Name : ${res[0].nama}
-💡 Size : ${res[0].size}
-🖇️ Link : ${res[0].link}
-*_please wait_*`
+📜 İsim : ${res[0].nama}
+💡 Boyutu : ${res[0].size}
+🖇️ Link/Bağlantı : ${res[0].link}
+*_LÜTFEN BEKLEYİNİZ!_*`
              reply(result)
              sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: mek})
              break
@@ -2334,12 +2335,12 @@ ${repo.open_issues} Issue${repo.description ? `
              break
       case 'twitter':
              if (!isUrl(args[0]) && !args[0].includes('twitter.com')) return reply(mess.Iv)
-             if (!q) return reply('the link?')
+             if (!q) return reply('Link/Bağlantı nerede?')
              ten = args[0]
              var res = await twitterGetUrl(`${ten}`)
             .then(g => {
              ren = `${g.download[2].url}`
-             sendMediaURL(from,ren,'Done')
+             sendMediaURL(from,ren,'Başarılı!')
              })
              break
       case 'lyric':
@@ -2355,7 +2356,7 @@ ${repo.open_issues} Issue${repo.description ? `
                break
       case 'playstore':
               try {
-              if (args.length == 0) return reply(`Send orders *${prefix}playstore [ apk ]*\nExample : ${prefix}playstore pubg`)
+              if (args.length == 0) return reply(`Sipariş gönder *${prefix}playstore [ apk ]*\nExample : ${prefix}playstore pubg`)
               query = args.join(" ")
               reply(mess.wait)
               get_result = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=${zekskey}&q=${query}`)
@@ -2364,7 +2365,7 @@ ${repo.open_issues} Issue${repo.description ? `
 ┆ *PLAYSTORE*
 └┈┈┈┈┈┈┈┈┈┈┈⌣ ┈̥-̶̯͡..̷̴✽̶⌣ ✽̶
 
-*Data Successfully Obtained!*\n`
+*Veri Başarıyla Alındı!*\n`
 for(let i = 0; i < get_result.length; i++) {
 teks += `*▢ Title : ${get_result[i].title}*
 *▢ Price : ${get_result[i].price}*
@@ -2376,38 +2377,38 @@ teks += `*▢ Title : ${get_result[i].title}*
               ini_buffer = await getBuffer(get_result[0].thumb)
               bosco.sendMessage(from, ini_buffer, image, { quoted: mek, caption: teks })
               } catch {
-              reply(`Sorry app ${query} not found`)
+              reply(`Affedersiniz ${query} bulunamadı!`)
 }
               break
       case 'ytdesc':
-             if (args.length < 1) return reply('*Where is the Yt Video/Link?*')
+             if (args.length < 1) return reply('*YouTube Video/Link nerede*')
              teks = args.join(' ')
              res = await yts(teks)
              reply(res.all[0].description)
              break
       case 'buttons1':
-              if (args.length < 1) return reply('*Where is the link?*')
+              if (args.length < 1) return reply('*Link/Bağlantı nerede?*')
               if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
               teks = args.join(' ')
               res = await y2mateA(teks)
               sendFileFromUrl(res[0].link, document, {quoted: mek, mimetype: 'audio/mp3', filename: res[0].output})
               break
      case 'buttons2':
-              if (args.length < 1) return reply('Link Nya Mana?')
+              if (args.length < 1) return reply('Link/Bağlantı nerede?')
               if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
               teks = args.join(' ')
               res = await y2mateV(teks)
               sendFileFromUrl(res[0].link, video, {quoted: mek, mimetype: 'video/mp4', filename: res[0].output})
               break
      case 'buttons3': 
-             if (!q) return reply('*Where is the link?*')
+             if (!q) return reply('*Link/Bağlantı nerede?*')
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              data = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=${lolkey}&url=${q}`)
              ini_video = await getBuffer(data.result.link)
              bosco.sendMessage(from, ini_video, video, { quoted: mek })
              break
       case 'buttons4': 
-             if (!q) return reply('*Where is the link?*')
+             if (!q) return reply('*Link/Bağlantı nerede?*')
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              data = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolkey}&url=${args[0]}`)
              bosco.sendMessage(from, data, audio, { quoted: mek })
@@ -2425,74 +2426,74 @@ teks += `*▢ Title : ${get_result[i].title}*
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 teks = `
-*I ᴀᴍ Sᴛɪʟʟ Aʟɪᴠᴇ Bʀᴏ :)*
-*Sᴘᴇᴇᴅ :* ${latensie.toFixed(4)} Second
-*Rᴀᴍ Usᴀɢᴇ :* ${ram2}
-*Bᴀᴛᴛᴇʀʏ :* ${baterai}% ${charger}
+*Yaşıyorum dostlar sakin olun! :)*
+*Hız :* ${latensie.toFixed(4)} Second
+*Rᴀᴍ Kullanımı :* ${ram2}
+*Şarj/Pil :* ${baterai}% ${charger}
 *Pʟᴀᴛғᴏʀᴍ :* ${os.platform()}
-*Uᴘᴛɪᴍᴇ :* ${runtime(process.uptime())}
-*Wᴀ ᴠᴇʀsɪᴏɴ :* ${bosco.user.phone.wa_version}
-*Os ᴠᴇʀsɪᴏɴ :* ${bosco.user.phone.os_version}
-*Dᴇᴠɪᴄᴇ Mᴀɴᴜғᴀᴄᴛᴜʀᴇ :* ${bosco.user.phone.device_manufacturer}
-*Dᴇᴠɪᴄᴇ Mᴏᴅᴇʟ :* ${bosco.user.phone.device_model}
+*Çalışma süresi :* ${runtime(process.uptime())}
+*WhatsApp Sürümü :* ${bosco.user.phone.wa_version}
+*İşletim Sistemi Sürümü :* ${bosco.user.phone.os_version}
+*Cihaz Üretimi :* ${bosco.user.phone.device_manufacturer}
+*Cihaz Modeli :* ${bosco.user.phone.device_model}
 `
-    menubutton = [{buttonId:`${prefix}credits`,buttonText:{displayText:'CREDITS'},type:1}
+    menubutton = [{buttonId:`${prefix}credits`,buttonText:{displayText:'KREDİ'},type:1}
 ]
- menumessage = { contentText: `${teks}`, footerText: `Sᴜʙsᴄʀɪʙᴇ Yᴛ Pᴇᴘᴇ Sɪʀ`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
+ menumessage = { contentText: `${teks}`, footerText: `Laçin Eke YouTube Kanalına ABONE OL!`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
  bosco.sendMessage(from, menumessage, MessageType.buttonsMessage)
              break  
       case 'buttons5':
               const mathdare = dare[Math.floor(Math.random() * (dare.length))]
               result = `${mathdare}`
-              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
-              buttonsMessage = { contentText: `${result}`, footerText: 'Truth or challenge?', buttons: buttons, headerType: 1 }
+              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Gerçek'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
+              buttonsMessage = { contentText: `${result}`, footerText: 'Gerçek mi, meydan okuma mı?', buttons: buttons, headerType: 1 }
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
       case 'buttons6':
               const randomtruth = truth[Math.floor(Math.random() * truth.length)]
               result = `${randomtruth}`
-              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
-              buttonsMessage = { contentText: `${result}`, footerText: 'Truth or challenge?', buttons: buttons, headerType: 1 }
+              buttons = [{buttonId: `${prefix}buttons6`,buttonText:{displayText: 'Gerçek'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Cesaret Etmek'},type:1},{buttonId:`${prefix}tod`,buttonText:{displayText:'Tod'},type:1}]
+              buttonsMessage = { contentText: `${result}`, footerText: 'Gerçek mi, Meydan okuma mı?', buttons: buttons, headerType: 1 }
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
        
          case 'antilink':
               if (!isGroup) return reply(mess.group)
-              if (!isBotGroupAdmins) return reply(`*Bot Must be Admin*`)
-              if (!q) return reply(`*Select enable or disable*`)
+              if (!isBotGroupAdmins) return reply(`*Bot yönetici olmalıdır!*`)
+              if (!q) return reply(`*Etkinleştir veya devre dışı bırakı seçin!*`)
               if (args[0].toLowerCase() === 'enable'){
-              if (isAntiLink) return reply(`*Already active*`)
+              if (isAntiLink) return reply(`*Zaten aktif!*`)
               antilink.push(from)
               fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-              reply('*「 ANTILINK ACTIVATED 」*\n\nThose who send the group link will be kicked!')
+              reply('*「 ANTİ LİNK AÇIK! 」*\n\nGrup linkini gönderenler atılacaktır!')
               } else if (args[0].toLowerCase() === 'disable'){
               let anu = antilink.indexOf(from)
               antilink.splice(anu, 1)
               fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-              reply('*「 ANTI LINK IS DISABLED 」*')
+              reply('*「 ANTİ LİNK KAPALI! 」*')
               } else {
-              reply(`*Select enable or disable*`)
+              reply(`*Etkinleştir veya devre dışı bırakı seçin!*`)
 }
               break
        case 'antibule':
 					if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antibule 1`)
+					if (args.length < 1) return reply(`Türünü etkinleştirmek için : ${prefix}antibule 1`)
 				    if (Number(args[0]) === 1) {
-						if (isKickArea) return reply('ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴇ')
+						if (isKickArea) return reply('Zaten aktif!')
 						kickarea.push(from)
 						fs.writeFileSync('./database/kickarea.json', JSON.stringify(kickarea))
-						sendFakeStatus(from, `sᴜᴄᴄᴇss`, fake)
+						sendFakeStatus(from, `Başarılı!`, fake)
 			  } else if (Number(args[0]) === 0) {
-						if (!isKickArea) return reply('ᴀʟʀᴇᴀᴅʏ ᴅᴇᴀᴅ')
+						if (!isKickArea) return reply('zaten *ldü')
 						kickarea.splice(from, 1)
 						fs.writeFileSync('./database/kickarea.json', JSON.stringify(kickarea))
 						sendFakeStatus(from, `sᴜᴄᴄᴇss`, fake)
 					} else {
-						reply('1 ᴛᴏ ᴛᴜʀɴ ᴏɴ, 0 ᴛᴏ ᴛᴜʀɴ ᴏғғ')
+						reply('Açmak için 1e basın, kapatmak için 0 sıfıra basın.')
 					}
 						break
 
@@ -2502,7 +2503,7 @@ teks = `
              brainly(args.join(" ")).then(res => {
              hmm = '────────────\n'
              for (let Y of res.data) {
-             hmm += `\n*「 _BRAINLY_ 」*\n\n*➸ Question:* ${Y.pertanyaan}\n\n*➸ Answer:* ${Y.jawaban[0].text}\n───────────\n`
+             hmm += `\n*「 _BRAINLY_ 」*\n\n*➸ Soru:* ${Y.pertanyaan}\n\n*➸ Cevap:* ${Y.jawaban[0].text}\n───────────\n`
 }
              reply(hmm)
              console.log(res)
