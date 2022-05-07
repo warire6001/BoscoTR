@@ -1,17 +1,17 @@
 module.exports.mess = {
-	        wait: '*Wait Now*',
-			success: '*Succes*',
-			wrongFormat: '*Format Is Wrong Retry..!*',
+	        wait: '*Bekleyiniz Lütfen...*',
+			success: '*Başarılı!*',
+			wrongFormat: '*Format Yanlış Tekrar Dene..!*',
 			error: {
-				api: '*Oops An Error Occurred*',
-				stick: '*Not That Sticker :v*',
-				Iv: '*Invalid Link*'
+				api: '*Olamaz! Bir hata oluştu*',
+				stick: '*O stickera değil .d*',
+				Iv: '*Geçersiz Link/Bağlantı*'
 			},
 			only: {
-				group: '*This command is specific to within the Group only.*',
-				admin: '*This command is specific to within the Group only.*',
-				premium: '*You are not a premium user, send an order* *!buy premium* *to buy premium*',
-				owner: '*This command is specific to the Owner Bot only.*',
-				Badmin: '*This command is only for bots when you are an admin!!*',
+				group: '*Bu komut yalnızca Grup için özeldir.*',
+				admin: '*Bu komut yalnızca Grup için özeldir.*',
+				premium: '*Sen Premium üye değilsin, sipariş gönder!* *!buy premium* *premium almak için komutunu yaz!*',
+				owner: '*Bu komut yalnızca botun sahibine özeldir.*',
+				Badmin: '*Bu komut yalnızca yönetici olduğunuzda botlar içindir!!*',
 			}
 		}
