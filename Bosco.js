@@ -3266,14 +3266,14 @@ if (Number(oi2) >= 50) return reply('*En çok!*')
                 reply('*Bot, bu sohbette başarıyla susturuldu!*')
                 break
      case 'tts':
-					if (args.length < 1) return bosco.sendMessage(from, `Dil kodu nerede? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
+					if (args.length < 1) return bosco.sendMessage(from, `Metin nerede? Mesela : ${prefix}tts Selam ben Lachin`, text, { quoted: mek })
 				   const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return bosco.sendMessage(from, `Teksnya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
+					if (args.length < 2) return bosco.sendMessage(from, `Metin nerede? Mesela : ${prefix}tts Selam ben Lachin`, text, { quoted: mek })
 					var bby = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					bby.length > 300
-						? reply('Teks nya terlalu panjang kak')
+						? reply('Metin çok uzun!')
 						: gtts.save(ranm, bby, function () {
 							exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 								fs.unlinkSync(ranm)
@@ -3287,23 +3287,23 @@ if (Number(oi2) >= 50) return reply('*En çok!*')
         case 'demote':
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
-				if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*Reply To Target*')
+				if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*Hedefe yanı ver!*')
 			demote = mek.message.extendedTextMessage.contextInfo.participant
 		    bosco.groupDemoteAdmin(from, [demote])
-						reply('*Successful Demote an Admin*')
+						reply('*Bir Yöneticinin Başarıyla yetkisi alındı! Artık yönetici değil.*')
 						break
 					case 'promote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-				  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*Reply To Target*')
+				  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*Hedefe yanıt ver!*')
 			promote = mek.message.extendedTextMessage.contextInfo.participant
 		    bosco.groupMakeAdmin(from, [promote])
-						reply('*Successful Promoted an Admin')
+						reply('*Başarılı Bir şekilde Yönetici yetkisi verildi! Artık Yönetici.*')
 						break
                 case 'linkgc':
 				if (!isGroup) return reply(mess.only.group)
 					linkgc = await bosco.groupInviteCode(from)
-					yeh = `https://chat.whatsapp.com/${linkgc}\n\nLink grup ${groupName}`
+					yeh = `https://chat.whatsapp.com/${linkgc}\n\nGrup Linki/Bağlantısı ${groupName}`
 					bosco.sendMessage(from, yeh, text, { quoted: fgc })
 					break
      case 'resetlinkgroup':
@@ -3312,7 +3312,7 @@ if (Number(oi2) >= 50) return reply('*En çok!*')
          if (!isGroupAdmins) return reply(mess.only.admin)
           json = ['action', 'inviteReset', from]
          bosco.query({json, expect200: true})
-          reply('*Succes Reset Group Link*')
+          reply('*Başarılı bir şekilde Grup Linki/Bağlantısı sıfırlandı!*')
          break
      case 'tagme':
                   var nomqm = mek.participant
@@ -3436,8 +3436,8 @@ if (budy.startsWith('=>')){
 if (!isOwner) return
 try {
 return bosco.sendMessage(from, 
-`${a}📥 Input: ${budy.slice(3)}
-📤 OutPut: 
+`${a}📥 Giriş: ${budy.slice(3)}
+📤 Çıkış: 
 ${JSON.stringify(eval(budy.slice(2)),null,'\t')}
 ${a}`
 ,text, {quoted:mek })
