@@ -30,7 +30,7 @@ module.exports = welcome = async (bosco, anu) => {
             }
             hehe = await getBuffer(pp_user)
             if (anu.action == 'add' && mem.includes(bosco.user.jid)) {
-            bosco.sendMessage(anu.jid, `hello bro I am A Bot 😎🌹 To use ${prefix}menu`, 'conversation')
+            bosco.sendMessage(anu.jid, `Selam dostum! Abone ol lütfen https://youtube.com/c/LacinEke komutları kullanmak için ${prefix}menu`, 'conversation')
             }
              if (anu.action == 'add' && !mem.includes(bosco.user.jid)) {
              const mdata = await bosco.groupMetadata(anu.jid)
@@ -59,7 +59,7 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ Bʀᴏᴛʜᴇʀ* 👋\n@${num.split('@')[0]}\n *Rᴇsᴛ Nᴏᴡ Pᴇᴀᴄᴇ* ▢\n${time_wel} -  ${time_welc}`
+                out = `*Hoşça kal! YouTube Laçin Eke https://youtube.com/c/LacinEke* 👋\n@${num.split('@')[0]}\n *YouTube Laçin Eke https://youtube.com/c/LacinEke* ▢\n${time_wel} -  ${time_welc}`
                 goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 bosco.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
