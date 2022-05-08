@@ -1,6 +1,6 @@
 #### NO MORE UPDATES IN BOSCO ...COMING WITH A NEW BOT SOON🙂💖
 #### HOW TO DEPLOY ?? [` CLICK HERE TO WATCH TUTORIAL ✨`](https://youtu.be/ZJQ50wYh7dc) 
-
+#### Deploy yaparken kendi adını kullan! https://heroku.com/deploy?template=https://github.com/GİTHUB-İSMİNİZ/BoscoTR/
 
 <div align="center">
 </p>
@@ -32,7 +32,7 @@
 ---
 
 ### `SIMPLE METHOD`
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@pepesir/PEPE-SIR-Qr-code?v=1) 
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@LachinEke/Lacin-Eke-QR-CODE?v=1) 
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EkeLachin/BoscoTR/)
