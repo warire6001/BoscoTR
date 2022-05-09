@@ -7,7 +7,7 @@
 
 
 <div align="center">
-<img src="media/lachinewMiniPP.jpg" alt="Lachin Eke" width="170" />
+<img src="https://telegra.ph/file/a18514b76374e7e5d7dec.jpg" alt="Lachin Eke" width="170" />
 
 # Bosco Bot
 <p align="center">
