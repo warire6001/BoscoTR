@@ -7,7 +7,7 @@
 
 
 <div align="center">
-<img src="media/boscoimg.jpg" alt="Pepe" width="170" />
+<img src="media/lachinewMiniPP.jpg" alt="Lachin Eke" width="170" />
 
 # Bosco Bot
 <p align="center">
