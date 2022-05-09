@@ -11,7 +11,7 @@
 
 # BoscoTR Bot
 <p align="center">
- <a href="https://github.com/EkeLachin"><img title="Author" src="https://img.shields.io/badge/OWNER-h?color=black&style=for-the-badge&logo=github"></a>  <a href="https://Wa.me/+917736622139?text=Hello%20P3P3%20Bro🌝...fen%20boi%20aan😌💝"><img title="Author" src="https://img.shields.io/badge/Author-YARATICI%20P3P3%20Sir-h?color=black&style=for-the-badge&logo=whatsapp"></a>
+ <a href="https://github.com/EkeLachin"><img title="Author" src="https://img.shields.io/badge/OWNER-h?color=black&style=for-the-badge&logo=github"></a>  <a href="https://Wa.me/+917736622139?text=Hello%20P3P3%20Bro🌝...fen%20boi%20aan😌💝"><img title="Author" src="https://img.shields.io/badge/Author/YARATICI%20P3P3%20Sir-h?color=black&style=for-the-badge&logo=whatsapp"></a>
 <p align="center">
 <a href="https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ"><img title="Author" src="https://img.shields.io/badge/WHATSAPP%20GRUBUMUZ-h?color=black&style=for-the-badge&logo=whatsapp"></a>    <a href="https://youtube.com/c/LacinEke"><img title="Author" src="https://img.shields.io/badge/YT%20Laçin%20Eke-h?color=black&style=for-the-badge&logo=youtube"></a>
 </p>
