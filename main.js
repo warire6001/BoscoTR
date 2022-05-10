@@ -49,16 +49,16 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
          
     const starts = async (bosco = new WAConnection()) => {
 	bosco.logger.level = 'warn'
-	console.log(color(figlet.textSync('BOSCO BY PEPE', {
+	console.log(color(figlet.textSync('BOSCOTR BY LAÇİN EKE', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'yellow'))
-	console.log(color('[DENIS]', 'cyan'), color('WELCOME', 'white'))
-	console.log(color('[SER]', 'cyan'), color('BOT RUNNING', 'yellow'))
-	bosco.browserDescription = ["SUBSCRIBE YT - [PEPE - SIR]", "firefox", "3.0.0"];
+	console.log(color('[LAÇİN]', 'cyan'), color('HOŞGELDİNİZ!', 'white'))
+	console.log(color('[EKE]', 'cyan'), color('BOT ÇALIŞIYOR!', 'yellow'))
+	bosco.browserDescription = ["ABONE OL YTB - [LAÇİN - EKE]", "firefox", "3.0.0"];
 
 	// Menunggu QR
 	bosco.on('qr', () => {
@@ -81,9 +81,9 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 		timeoutMs: 10 * 1000
 	})
 	fs.writeFileSync(`./Denis.json`, JSON.stringify(bosco.base64EncodedAuthInfo(), null, '\t'));
- teks = `https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`
+ teks = `https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ`
  bosco.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
- console.log(color('|WRN|', 'yellow'), color('ǫʀ ɪs ʀᴜɴɪɴɢ', 'blue'))
+ console.log(color('|WRN|', 'yellow'), color('QR ÇALIŞIYOR!', 'blue'))
  function _0x5a37(_0x506884,_0x2a1cf7){var _0x333aa5=_0x333a();return _0x5a37=function(_0x5a37e7,_0x3acca0){_0x5a37e7=_0x5a37e7-0x186;var _0x54743c=_0x333aa5[_0x5a37e7];return _0x54743c;},_0x5a37(_0x506884,_0x2a1cf7);}function _0x333a(){var _0x4bc3f4=['*𝙷𝙸\x20𝙱𝚁𝙾\x20,\x20𝙱𝙾𝚃\x20𝙷𝙰𝚂\x20𝚂𝚃𝙰𝚁𝚃𝙴𝙳\x20𝚁𝚄𝙽𝙽𝙸𝙽𝙶\x20𝙸𝙽\x20𝚈𝙾𝚄𝚁\x20𝙽𝚄𝙼𝙱𝙴𝚁*\x0a\x0a*𝙸𝚏\x20𝚝𝚑𝚎𝚛𝚎\x27𝚜\x20𝚊𝚗𝚢\x20𝚎𝚛𝚛𝚘𝚛/𝚙𝚕𝚎𝚊𝚜𝚎\x20𝚌𝚘𝚗𝚝𝚊𝚌𝚝\x20𝙱𝚘𝚝\x20𝚘𝚠𝚗𝚎𝚛,\x20𝚃𝚑𝚊𝚗𝚔\x20𝚢𝚘𝚞\x20𝚏𝚘𝚛\x20𝚌𝚑𝚘𝚘𝚜𝚒𝚗𝚐\x20𝚖𝚢\x20𝚋𝚘𝚝*','935438mmhJnv','sendMessage','297252xvcbmp','owner','75177OjqAkg','1133562uaXiYY','readFileSync','297899BUwdgq','274270oXESSo','PHOTO','./ds.jpg','10MyBihz','Cʀᴇᴀᴛᴏʀ\x20Pᴇᴘᴇ\x20Sɪʀ','text','https://wa.me/917736622139?text=Hi\x20bro','619890QujQgd','@s.whatsapp.net','16zTKLmY'];_0x333a=function(){return _0x4bc3f4;};return _0x333a();}var _0x3872fa=_0x5a37;(function(_0x5cf6a2,_0x44c4fc){var _0x501eae=_0x5a37,_0x2e28da=_0x5cf6a2();while(!![]){try{var _0x5eedd0=-parseInt(_0x501eae(0x198))/0x1+parseInt(_0x501eae(0x186))/0x2+parseInt(_0x501eae(0x18d))/0x3+-parseInt(_0x501eae(0x193))/0x4+parseInt(_0x501eae(0x189))/0x5*(parseInt(_0x501eae(0x196))/0x6)+-parseInt(_0x501eae(0x191))/0x7+-parseInt(_0x501eae(0x18f))/0x8*(-parseInt(_0x501eae(0x195))/0x9);if(_0x5eedd0===_0x44c4fc)break;else _0x2e28da['push'](_0x2e28da['shift']());}catch(_0x5661ff){_0x2e28da['push'](_0x2e28da['shift']());}}}(_0x333a,0x38c1f),bosco[_0x3872fa(0x192)](setting[_0x3872fa(0x194)]+_0x3872fa(0x18e),_0x3872fa(0x190),MessageType[_0x3872fa(0x18b)],{'contextInfo':{'forwardingScore':0x1fc,'isForwarded':!![],'externalAdReply':{'title':_0x3872fa(0x18a),'body':'','previewType':_0x3872fa(0x187),'thumbnail':fs[_0x3872fa(0x197)](_0x3872fa(0x188)),'sourceUrl':_0x3872fa(0x18c)}}}));
 	console.log(color('|WRN|', 'yellow'), color('Bot has started running', 'blue'))
 
@@ -128,7 +128,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			try {
 					ppimg = await bosco.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = 'https://telegra.ph/file/97e1a5d6d36e2853a977d.jpg'
 				}
 			let buff = await getBuffer(ppimg)
 			const bosco1 = await bosco.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
@@ -137,7 +137,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
  @${num.split('@')[0]}
 `
 			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'Congrats 🥳'},type:1}]
-            promoteButt = { contentText: `${teks}`, footerText: `Thank You So Much 🌝❤️`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+            promoteButt = { contentText: `${teks}`, footerText: `Teşekkür ederim! 🌝❤️`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
             bosco.sendMessage(mdata.id, promoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    } else if (anu.action == 'demote') {
 			num = anu.participants[0]
@@ -145,16 +145,16 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			try {
 					ppimg = await bosco.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = 'https://telegra.ph/file/97e1a5d6d36e2853a977d.jpg'
 				}
 			let buff = await getBuffer(ppimg)
 			const bosco3= await bosco.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
 			const bosco4 = bosco3.message["ephemeralMessage"] ? bosco3.message.ephemeralMessage : bosco3
-			teks = `*Yᴏᴜ Aʀᴇ Nᴏ Lᴏɴɢᴇʀ Aɴ Aᴅᴍɪɴ*
+			teks = `*Artık bir yönetici DEĞİLSİN!*
  @${num.split('@')[0]}
 `
 			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'Next Time I get'},type:1}]
-            demoteButt = { contentText: `${teks}`, footerText: `Who Is the Bledy Fool 🙂`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
+            demoteButt = { contentText: `${teks}`, footerText: `Laçin Eke YouTube Abone OL 🙂`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
             bosco.sendMessage(mdata.id, demoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    }
             } catch (e) {
@@ -167,26 +167,26 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
    remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Alphabot", "caption": `🌹 𝑷 𝑬 𝑷 𝑬 - 𝑺 𝑬 𝑹 🌹`, 'jpegThumbnail': fs.readFileSync(`ds.jpg`)}}}
     metdata = await bosco.groupMetadata(anu.jid)
     if(anu.announce == 'false'){
-    teks = `*[ Gʀᴏᴜᴘ Oᴘᴇɴᴇᴅ ]*\n`
+    teks = `*[ Gʀup Açıldı! ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Opened ] In ${metdata.subject}`))
   } else if(anu.announce == 'true'){
-    teks = `*[ Gʀᴏᴜᴘ Cʟᴏsᴇᴅ ]*\n`
+    teks = `*[ Gʀup Kapandı! ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(clc.yellow(`[ Group Closed ] In ${metdata.subject}`))
+    console.log(clc.yellow(`[ Grup Kapandı! ] In ${metdata.subject}`))
   } else if(!anu.desc == ''){
     tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-    teks = `*[ Gʀᴏᴜᴘ Dɪsᴄʀɪᴘᴛɪᴏɴ Cʜᴀɴɢᴇ ]*\n\n • *ɴᴇᴡ* : *${anu.desc}*`
+    teks = `*[ Gʀup açıklaması değişti! ]*\n\n • *yeni* : *${anu.desc}*`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: falfa})
-    console.log(clc.yellow(`[ Group Description Change ] In ${metdata.subject}`))
+    console.log(clc.yellow(`[ Grup açıklaması değişti! ] In ${metdata.subject}`))
  } else if(anu.restrict == 'false'){
-    teks = `*[ Gʀᴏᴜᴘ Sᴇᴛᴛɪɴɢs Cʜᴀɴɢᴇ ]*\n`
+    teks = `*[ Gʀup ayarları değişti! ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
+    console.log(clc.yellow(`[ Grup ayarları değişti! ] In ${metdata.subject}`))
   } else if(anu.restrict == 'true'){
-    teks = `*[ Gʀᴏᴜᴘ Sᴇᴛᴛɪɴɢ Cʜᴀɴɢᴇ ]*\n`
+    teks = `*[ Gʀup ayarları değişti! ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
+    console.log(clc.yellow(`[ Grup ayarları değişti! ] In ${metdata.subject}`))
    }
 })
 
