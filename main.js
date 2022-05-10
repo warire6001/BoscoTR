@@ -155,7 +155,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			teks = `*Artık bir yönetici DEĞİLSİN!*
  @${num.split('@')[0]}
 `
-			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'Next Time I get'},type:1}]
+			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'Laçin Eke YouTube Kanalına ABONE OL!'},type:1}]
             demoteButt = { contentText: `${teks}`, footerText: `Laçin Eke YouTube Abone OL 🙂`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
             bosco.sendMessage(mdata.id, demoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    }
