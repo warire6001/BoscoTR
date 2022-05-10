@@ -1,8 +1,10 @@
 /* 
-Don't change credits🥲🚶
-Sourcecode https://github.com/pepesir/Bosco
-Want to recode? yes, it's up to you as long as you don't change the watermark
-Don't sell the SC 😐👌
+Tamamen açık kaynaklıdır!
+İsteyen kaynak kodlarını değiştirip, yeniden yapılandırabilir!
+GİTHUB Kaynak kodu: https://github.com/EkeLachin/BoscoTR
+TELEGRAM GRUBUMUZ: https://t.me/rlchat
+WHATSAPP GRUBUMUZ: https://chat.whatsapp.com/BqwU4hCuq0d3AOTerPVatJ
+YOUTUBE: https://youtube.com/c/LacinEke
 */
 
 const {
@@ -62,7 +64,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 
 	// Menunggu QR
 	bosco.on('qr', () => {
-		console.log(color('[', 'white'), color('!', 'red'), color(']', 'white'), color('Please scan qr code'))
+		console.log(color('[', 'white'), color('!', 'red'), color(']', 'white'), color('Lütfen QR Kodunu tarayın!'))
 	})
 
 	// Menghubungkan
@@ -136,7 +138,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			teks = `*Yᴏᴜ Aʀᴇ Nᴏᴡ Aɴ Aᴅᴍɪɴ*
  @${num.split('@')[0]}
 `
-			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'Congrats 🥳'},type:1}]
+			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'Tebrikler! 🥳'},type:1}]
             promoteButt = { contentText: `${teks}`, footerText: `Teşekkür ederim! 🌝❤️`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
             bosco.sendMessage(mdata.id, promoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    } else if (anu.action == 'demote') {
