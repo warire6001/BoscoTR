@@ -15,4 +15,4 @@ npm install
 npm install fluent-ffmpeg
 npm install imgbb-uploader
 
-echo "DONE INSTALLING ALL PACKAGE REQUIRE, NOW RUN npm start"
+echo "GEREKLİ OLAN TÜM PAKETİN KURULUMU YAPILMIŞTIR!, ŞİMDİ ŞU KOMUTU YAZIN npm start"
