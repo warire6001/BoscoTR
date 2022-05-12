@@ -1,5 +1,5 @@
 #### NO MORE UPDATES IN BOSCO ...COMING WITH A NEW BOT SOON🙂💖
-#### HOW TO DEPLOY ?? [` CLICK HERE TO WATCH TUTORIAL ✨`](https://youtu.be/ZJQ50wYh7dc) 
+#### HOW TO DEPLOY ?? [` CLICK HERE TO WATCH TUTORIAL ✨`](https://youtu.be/d_XY81qtTns) 
 #### Deploy yaparken kendi adını kullan! https://heroku.com/deploy?template=https://github.com/GİTHUB-İSMİNİZ/BoscoTR/
 
 <div align="center">
